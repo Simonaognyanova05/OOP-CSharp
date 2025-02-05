@@ -1,0 +1,7 @@
+C:\Users\simon\source\repos\SumFraction\SumFraction\bin\Debug\SumFraction.exe.config
+C:\Users\simon\source\repos\SumFraction\SumFraction\bin\Debug\SumFraction.exe
+C:\Users\simon\source\repos\SumFraction\SumFraction\bin\Debug\SumFraction.pdb
+C:\Users\simon\source\repos\SumFraction\SumFraction\obj\Debug\SumFraction.csproj.AssemblyReference.cache
+C:\Users\simon\source\repos\SumFraction\SumFraction\obj\Debug\SumFraction.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\SumFraction\SumFraction\obj\Debug\SumFraction.exe
+C:\Users\simon\source\repos\SumFraction\SumFraction\obj\Debug\SumFraction.pdb
