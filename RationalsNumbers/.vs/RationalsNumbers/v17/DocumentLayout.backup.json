@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\RationalsNumbers\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F86143D-20C4-4B2B-95EF-D794E0E7010F}|RationalsNumbers\\RationalsNumbers.csproj|c:\\users\\simon\\source\\repos\\rationalsnumbers\\rationalsnumbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F86143D-20C4-4B2B-95EF-D794E0E7010F}|RationalsNumbers\\RationalsNumbers.csproj|solutionrelative:rationalsnumbers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F86143D-20C4-4B2B-95EF-D794E0E7010F}|RationalsNumbers\\RationalsNumbers.csproj|c:\\users\\simon\\source\\repos\\rationalsnumbers\\rationalsnumbers\\rationalnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F86143D-20C4-4B2B-95EF-D794E0E7010F}|RationalsNumbers\\RationalsNumbers.csproj|solutionrelative:rationalsnumbers\\rationalnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RationalNumber.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\RationalsNumbers\\RationalsNumbers\\RationalNumber.cs",
+              "RelativeDocumentMoniker": "RationalsNumbers\\RationalNumber.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\RationalsNumbers\\RationalsNumbers\\RationalNumber.cs",
+              "RelativeToolTip": "RationalsNumbers\\RationalNumber.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAM0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T21:33:33.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\RationalsNumbers\\RationalsNumbers\\Program.cs",
+              "RelativeDocumentMoniker": "RationalsNumbers\\Program.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\RationalsNumbers\\RationalsNumbers\\Program.cs",
+              "RelativeToolTip": "RationalsNumbers\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T21:32:42.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

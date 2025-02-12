@@ -1,0 +1,7 @@
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\bin\Debug\RationalsNumbers.exe.config
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\bin\Debug\RationalsNumbers.exe
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\bin\Debug\RationalsNumbers.pdb
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\obj\Debug\RationalsNumbers.csproj.AssemblyReference.cache
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\obj\Debug\RationalsNumbers.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\obj\Debug\RationalsNumbers.exe
+C:\Users\simon\source\repos\RationalsNumbers\RationalsNumbers\obj\Debug\RationalsNumbers.pdb
