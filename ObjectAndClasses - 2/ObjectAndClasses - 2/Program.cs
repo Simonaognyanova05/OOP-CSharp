@@ -33,7 +33,7 @@ class Program
                     DeleteContact(contacts);
                     break;
                 case "4":
-                    //DisplayAllContacts(contacts);
+                    DisplayAllContacts(contacts);
                     break;
                 case "5":
                     isRunning = false;
@@ -89,6 +89,14 @@ class Program
         else
         {
             Console.WriteLine("Contact not exists!");
+        }
+    }
+
+    static void DisplayAllContacts(List<Contact> contacts)
+    {
+        foreach(var contact in contacts)
+        {
+            Console.WriteLine(contact);
         }
     }
 }
