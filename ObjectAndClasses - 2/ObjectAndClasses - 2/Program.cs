@@ -27,7 +27,7 @@ class Program
                     Add(contacts);
                     break;
                 case "2":
-                    //SearchContact(contacts);
+                    SearchContact(contacts);
                     break;
                 case "3":
                     //DeleteContact(contacts);
@@ -56,4 +56,23 @@ class Program
         Console.WriteLine("Contact was added successfully!");
     }
     
+    static void SearchContact(List<Contact> contacts)
+    {
+        string searched = Console.ReadLine();
+
+        var result = contacts.FindAll(x => x.Name.Contains(searched) || x.PhoneNumber.Contains(searched)
+        || x.Email.Contains(searched));
+
+        if(result.Count > 0)
+        {
+            foreach(var contact in result)
+            {
+                Console.WriteLine(contact);
+            }
+        }
+        else
+        {
+            Console.WriteLine("This contact not exists!");
+        }
+    }
 }

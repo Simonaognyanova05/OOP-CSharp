@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\objectandclasses - 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\objectandclasses - 2\\objectandclasses - 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|solutionrelative:objectandclasses - 2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\objectandclasses - 2\\objectandclasses - 2\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\objectandclasses - 2\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2DAFAE6-C2CC-4850-B38C-A919F60FA93C}|ObjectAndClasses - 2\\ObjectAndClasses - 2.csproj|solutionrelative:objectandclasses - 2\\contacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,8 +34,7 @@
               "RelativeToolTip": "ObjectAndClasses - 2\\Contacts.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T16:27:08.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T16:27:08.505Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "ObjectAndClasses - 2\\Program.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ObjectAndClasses - 2\\Program.cs",
               "RelativeToolTip": "ObjectAndClasses - 2\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T16:20:35.519Z",
               "EditorCaption": ""
