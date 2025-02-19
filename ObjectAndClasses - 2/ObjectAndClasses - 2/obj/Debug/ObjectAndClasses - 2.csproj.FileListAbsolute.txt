@@ -5,3 +5,10 @@ C:\Users\simon\source\repos\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\
 C:\Users\simon\source\repos\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.csproj.CoreCompileInputs.cache
 C:\Users\simon\source\repos\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.exe
 C:\Users\simon\source\repos\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.csproj.AssemblyReference.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.csproj.CoreCompileInputs.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\obj\Debug\ObjectAndClasses - 2.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\bin\Debug\ObjectAndClasses - 2.exe.config
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\bin\Debug\ObjectAndClasses - 2.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ObjectAndClasses - 2\bin\Debug\ObjectAndClasses - 2.pdb
