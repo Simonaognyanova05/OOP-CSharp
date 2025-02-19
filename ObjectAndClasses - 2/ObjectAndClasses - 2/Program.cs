@@ -30,7 +30,7 @@ class Program
                     SearchContact(contacts);
                     break;
                 case "3":
-                    //DeleteContact(contacts);
+                    DeleteContact(contacts);
                     break;
                 case "4":
                     //DisplayAllContacts(contacts);
@@ -73,6 +73,22 @@ class Program
         else
         {
             Console.WriteLine("This contact not exists!");
+        }
+    }
+
+    static void DeleteContact(List<Contact> contacts)
+    {
+        string forDelete = Console.ReadLine();
+        var result = contacts.Find(x =>  x.PhoneNumber.Contains(forDelete));
+
+        if(result != null)
+        {
+            contacts.Remove(result);
+            Console.WriteLine("Contact was deleted successfully!");
+        }
+        else
+        {
+            Console.WriteLine("Contact not exists!");
         }
     }
 }
