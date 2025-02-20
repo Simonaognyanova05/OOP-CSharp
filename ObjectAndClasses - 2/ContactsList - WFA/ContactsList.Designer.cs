@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblService = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtService = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
@@ -89,12 +89,12 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Choose a service:";
             // 
-            // textBox1
+            // txtService
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtService.Location = new System.Drawing.Point(12, 121);
+            this.txtService.Name = "txtService";
+            this.txtService.Size = new System.Drawing.Size(267, 26);
+            this.txtService.TabIndex = 4;
             // 
             // txtName
             // 
@@ -124,6 +124,7 @@
             this.btnSubmit.TabIndex = 7;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnResult
             // 
@@ -135,6 +136,7 @@
             this.btnResult.Text = "Submit";
             this.btnResult.UseVisualStyleBackColor = true;
             this.btnResult.Visible = false;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // txtPhonebook
             // 
@@ -163,7 +165,7 @@
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtService);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblService);
             this.Controls.Add(this.label1);
@@ -183,7 +185,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblService;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtService;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnSubmit;
