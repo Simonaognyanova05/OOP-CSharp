@@ -73,6 +73,13 @@ namespace ContactsList___WFA
                     txtPhonebook.Visible = false;
                     DisplayAllContacts(contacts);
                     break;
+                 case "5":
+                    Exit();
+                    break;
+                default:
+                    MessageBox.Show("Invalid input!");
+                    break;
+
             }
         }
 
@@ -145,6 +152,11 @@ namespace ContactsList___WFA
             {
                 MessageBox.Show("No contacts yet!");
             }
+        }
+        private void Exit()
+        {
+            MessageBox.Show("Thanks for usage!");
+            this.Close();
         }
         private void btnResult_Click(object sender, EventArgs e)
         {
