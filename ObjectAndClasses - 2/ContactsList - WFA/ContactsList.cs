@@ -56,6 +56,15 @@ namespace ContactsList___WFA
                     lblResult.Text = "Search contact";
                     btnResult.Text = "Search";
                     break;
+                case "3":
+                    lblResult.Visible = true;
+                    txtName.Visible = true;
+                    btnResult.Visible = true;
+                    txtEmail.Visible = false;
+                    txtPhonebook.Visible = false;
+                    lblResult.Text = "Delete contact";
+                    btnResult.Text = "Delete";
+                    break;
             }
         }
 
@@ -98,6 +107,21 @@ namespace ContactsList___WFA
                 lstContacts.Items.Add("This contact does not exist!");
             }
         }
+
+        private void Delete(List<Contact> contacts)
+        {
+            string forDelete = txtName.Text;
+            var result = contacts.Find(x => x.PhoneNumber.Contains(forDelete));
+            if(result != null)
+            {
+                contacts.Remove(result);
+                MessageBox.Show("Contact was deleted successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Contact does not exists!");
+            }
+        }
         private void btnResult_Click(object sender, EventArgs e)
         {
             string command = txtService.Text;
@@ -109,6 +133,9 @@ namespace ContactsList___WFA
                     break;
                 case "2":
                     Search(contacts);
+                    break;
+                case "3":
+                    Delete(contacts);
                     break;
             }
            
