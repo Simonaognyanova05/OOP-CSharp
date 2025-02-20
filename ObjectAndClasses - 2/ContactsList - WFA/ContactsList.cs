@@ -65,6 +65,14 @@ namespace ContactsList___WFA
                     lblResult.Text = "Delete contact";
                     btnResult.Text = "Delete";
                     break;
+                case "4":
+                    lblResult.Visible = false;
+                    txtName.Visible = false;
+                    btnResult.Visible = false;
+                    txtEmail.Visible = false;
+                    txtPhonebook.Visible = false;
+                    DisplayAllContacts(contacts);
+                    break;
             }
         }
 
@@ -120,6 +128,22 @@ namespace ContactsList___WFA
             else
             {
                 MessageBox.Show("Contact does not exists!");
+            }
+        }
+
+        private void DisplayAllContacts(List<Contact> contacts)
+        {
+            lstContacts.Items.Clear();
+            if(contacts.Count > 0)
+            {
+                foreach (var contact in contacts)
+                {
+                    lstContacts.Items.Add(contact);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No contacts yet!");
             }
         }
         private void btnResult_Click(object sender, EventArgs e)
