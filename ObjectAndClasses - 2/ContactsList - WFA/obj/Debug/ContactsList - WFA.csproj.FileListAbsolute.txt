@@ -1,0 +1,10 @@
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\bin\Debug\ContactsList - WFA.exe.config
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\bin\Debug\ContactsList - WFA.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\bin\Debug\ContactsList - WFA.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList - WFA.csproj.AssemblyReference.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList___WFA.ContactsList.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList___WFA.Properties.Resources.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList - WFA.csproj.GenerateResource.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList - WFA.csproj.CoreCompileInputs.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList - WFA.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\ObjectAndClasses - 2\ContactsList - WFA\obj\Debug\ContactsList - WFA.pdb
