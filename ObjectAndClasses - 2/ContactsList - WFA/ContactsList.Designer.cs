@@ -33,10 +33,12 @@
             this.lblService = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtResult = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnResult = new System.Windows.Forms.Button();
+            this.txtPhonebook = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lstContacts
@@ -94,13 +96,13 @@
             this.textBox1.Size = new System.Drawing.Size(267, 26);
             this.textBox1.TabIndex = 4;
             // 
-            // txtResult
+            // txtName
             // 
-            this.txtResult.Location = new System.Drawing.Point(12, 250);
-            this.txtResult.Name = "txtResult";
-            this.txtResult.Size = new System.Drawing.Size(267, 26);
-            this.txtResult.TabIndex = 6;
-            this.txtResult.Visible = false;
+            this.txtName.Location = new System.Drawing.Point(12, 250);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(267, 26);
+            this.txtName.TabIndex = 6;
+            this.txtName.Visible = false;
             // 
             // lblResult
             // 
@@ -126,7 +128,7 @@
             // btnResult
             // 
             this.btnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResult.Location = new System.Drawing.Point(165, 282);
+            this.btnResult.Location = new System.Drawing.Point(165, 367);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(114, 38);
             this.btnResult.TabIndex = 8;
@@ -134,14 +136,32 @@
             this.btnResult.UseVisualStyleBackColor = true;
             this.btnResult.Visible = false;
             // 
+            // txtPhonebook
+            // 
+            this.txtPhonebook.Location = new System.Drawing.Point(12, 291);
+            this.txtPhonebook.Name = "txtPhonebook";
+            this.txtPhonebook.Size = new System.Drawing.Size(267, 26);
+            this.txtPhonebook.TabIndex = 9;
+            this.txtPhonebook.Visible = false;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(12, 335);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(267, 26);
+            this.txtEmail.TabIndex = 10;
+            this.txtEmail.Visible = false;
+            // 
             // ContactsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 340);
+            this.ClientSize = new System.Drawing.Size(623, 419);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPhonebook);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -164,10 +184,12 @@
         private System.Windows.Forms.Label lblService;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnResult;
+        private System.Windows.Forms.TextBox txtPhonebook;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }
 
