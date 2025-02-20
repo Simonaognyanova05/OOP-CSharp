@@ -12,6 +12,7 @@ namespace ContactsList___WFA
 {
     public partial class ContactsList : Form
     {
+        private List<Contact> contacts = new List<Contact>();
         public ContactsList()
         {
             InitializeComponent();
@@ -46,16 +47,25 @@ namespace ContactsList___WFA
                     lblResult.Text = "Add contact data";
                     btnResult.Text = "Add";
                     break;
+                case "2":
+                    lblResult.Visible = true;
+                    txtName.Visible = true;
+                    btnResult.Visible = true;
+                    txtEmail.Visible = false;
+                    txtPhonebook.Visible = false;
+                    lblResult.Text = "Search contact";
+                    btnResult.Text = "Search";
+                    break;
             }
         }
-        private void btnResult_Click(object sender, EventArgs e)
+
+        private List<Contact> Add(List<Contact> contacts)
         {
-            List<Contact> contacts = new List<Contact>();
             string name = txtName.Text;
             string phoneNumber = txtPhonebook.Text;
             string email = txtEmail.Text;
 
-            if(name == "" || phoneNumber == "" || email == "")
+            if (name == "" || phoneNumber == "" || email == "")
             {
                 MessageBox.Show("Invalid data!");
             }
@@ -64,6 +74,44 @@ namespace ContactsList___WFA
                 contacts.Add(new Contact { Name = name, PhoneNumber = phoneNumber, Email = email });
                 MessageBox.Show("Contact was added successfully!");
             }
+
+            return contacts;
+        }
+
+        private void Search(List<Contact> contacts)
+        {
+            string searched = txtName.Text;
+            var result = contacts.FindAll(x => x.Name.Contains(searched) 
+            || x.PhoneNumber.Contains(searched)
+            || x.Email.Contains(searched));
+
+            lstContacts.Items.Clear();
+            if(result.Count > 0)
+            {
+                foreach (var contact in result)
+                {
+                    lstContacts.Items.Add(contact);
+                }
+            }
+            else
+            {
+                lstContacts.Items.Add("This contact does not exist!");
+            }
+        }
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            string command = txtService.Text;
+
+            switch (command)
+            {
+                case "1":
+                    Add(contacts);
+                    break;
+                case "2":
+                    Search(contacts);
+                    break;
+            }
+           
         }
     }
 }

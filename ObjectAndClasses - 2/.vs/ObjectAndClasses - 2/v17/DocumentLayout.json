@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|solutionrelative:contactslist - wfa\\contactslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\objectandclasses - 2\\contactslist - wfa\\contactslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\contactslist - wfa\\contactslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|solutionrelative:contactslist - wfa\\contactslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\objectandclasses - 2\\contactslist - wfa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|solutionrelative:contactslist - wfa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\objectandclasses - 2\\contactslist - wfa\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76095F11-F848-4A51-ADE0-9AB494F97707}|ContactsList - WFA\\ContactsList - WFA.csproj|solutionrelative:contactslist - wfa\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,35 +28,9 @@
               "RelativeDocumentMoniker": "ContactsList - WFA\\ContactsList.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ContactsList - WFA\\ContactsList.cs",
               "RelativeToolTip": "ContactsList - WFA\\ContactsList.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAuwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T12:40:32.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ContactsList - WFA\\Program.cs",
-              "RelativeDocumentMoniker": "ContactsList - WFA\\Program.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ContactsList - WFA\\Program.cs",
-              "RelativeToolTip": "ContactsList - WFA\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:34:13.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ContactsList - WFA\\Contact.cs",
-              "RelativeDocumentMoniker": "ContactsList - WFA\\Contact.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\ObjectAndClasses - 2\\ContactsList - WFA\\Contact.cs",
-              "RelativeToolTip": "ContactsList - WFA\\Contact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:33:06.337Z",
               "EditorCaption": ""
             },
             {
