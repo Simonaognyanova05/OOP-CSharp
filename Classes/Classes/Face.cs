@@ -9,10 +9,12 @@ namespace Classes
     internal class Face
     {
         public string Names { get; set; }
+        public string Number { get; set; }
+
 
         public override string ToString()
         {
-            return Names;
+            return $"{Names} - {Number}";
         }
     }
 }

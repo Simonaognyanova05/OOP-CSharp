@@ -23,7 +23,7 @@ namespace Classes
             string names = txtFaces.Text;
             faces.Add(new Face { Names = names });
 
-            foreach(Face face in faces)
+            foreach (Face face in faces)
             {
                 lstFaces.Items.Add(face);
             }
