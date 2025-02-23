@@ -34,6 +34,8 @@
             this.lstFaces = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.txtNumber = new System.Windows.Forms.TextBox();
+            this.lblNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblFace
@@ -55,7 +57,7 @@
             // lblFaces
             // 
             this.lblFaces.AutoSize = true;
-            this.lblFaces.Location = new System.Drawing.Point(14, 89);
+            this.lblFaces.Location = new System.Drawing.Point(13, 159);
             this.lblFaces.Name = "lblFaces";
             this.lblFaces.Size = new System.Drawing.Size(48, 20);
             this.lblFaces.TabIndex = 2;
@@ -65,14 +67,14 @@
             // 
             this.lstFaces.FormattingEnabled = true;
             this.lstFaces.ItemHeight = 20;
-            this.lstFaces.Location = new System.Drawing.Point(18, 122);
+            this.lstFaces.Location = new System.Drawing.Point(17, 192);
             this.lstFaces.Name = "lstFaces";
             this.lstFaces.Size = new System.Drawing.Size(311, 124);
             this.lstFaces.TabIndex = 3;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(218, 268);
+            this.btnAdd.Location = new System.Drawing.Point(217, 338);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 33);
             this.btnAdd.TabIndex = 4;
@@ -82,7 +84,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(102, 268);
+            this.btnRemove.Location = new System.Drawing.Point(101, 338);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(110, 33);
             this.btnRemove.TabIndex = 5;
@@ -90,11 +92,29 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // txtNumber
+            // 
+            this.txtNumber.Location = new System.Drawing.Point(17, 119);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(311, 26);
+            this.txtNumber.TabIndex = 7;
+            // 
+            // lblNumber
+            // 
+            this.lblNumber.AutoSize = true;
+            this.lblNumber.Location = new System.Drawing.Point(13, 86);
+            this.lblNumber.Name = "lblNumber";
+            this.lblNumber.Size = new System.Drawing.Size(59, 20);
+            this.lblNumber.TabIndex = 6;
+            this.lblNumber.Text = "Номер";
+            // 
             // frmFaces
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 319);
+            this.ClientSize = new System.Drawing.Size(355, 384);
+            this.Controls.Add(this.txtNumber);
+            this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lstFaces);
@@ -116,6 +136,8 @@
         private System.Windows.Forms.ListBox lstFaces;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.TextBox txtNumber;
+        private System.Windows.Forms.Label lblNumber;
     }
 }
 

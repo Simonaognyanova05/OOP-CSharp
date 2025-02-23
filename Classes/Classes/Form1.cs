@@ -21,7 +21,8 @@ namespace Classes
         {
             List<Face> faces = new List<Face>();
             string names = txtFaces.Text;
-            faces.Add(new Face { Names = names });
+            string phone = txtNumber.Text;
+            faces.Add(new Face { Names = names, Number = phone });
 
             foreach (Face face in faces)
             {
