@@ -8,3 +8,13 @@ C:\Users\simon\source\repos\Classes\Classes\obj\Debug\Classes.csproj.GenerateRes
 C:\Users\simon\source\repos\Classes\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
 C:\Users\simon\source\repos\Classes\Classes\obj\Debug\Classes.exe
 C:\Users\simon\source\repos\Classes\Classes\obj\Debug\Classes.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\bin\Debug\Classes.exe.config
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\bin\Debug\Classes.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\bin\Debug\Classes.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.csproj.AssemblyReference.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.frmFaces.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.Properties.Resources.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.csproj.GenerateResource.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.csproj.CoreCompileInputs.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Classes\Classes\obj\Debug\Classes.pdb

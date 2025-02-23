@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\Classes\\",
+  "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|c:\\users\\simon\\source\\repos\\classes\\classes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\classes\\classes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|solutionrelative:classes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\classes\\classes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|solutionrelative:classes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\classes\\classes\\face.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA08F91A-2738-4CDA-ADBD-7DA63772E6BF}|Classes\\Classes.csproj|solutionrelative:classes\\face.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,15 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Face.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Face.cs",
+              "RelativeDocumentMoniker": "Classes\\Face.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Face.cs",
+              "RelativeToolTip": "Classes\\Face.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:44:05.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\Classes\\Classes\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Form1.cs",
               "RelativeDocumentMoniker": "Classes\\Form1.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\Classes\\Classes\\Form1.cs [Design]*",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Form1.cs*",
+              "RelativeToolTip": "Classes\\Form1.cs*",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T11:43:36.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Form1.cs",
+              "RelativeDocumentMoniker": "Classes\\Form1.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Classes\\Classes\\Form1.cs [Design]*",
               "RelativeToolTip": "Classes\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-23T11:36:59.751Z",
