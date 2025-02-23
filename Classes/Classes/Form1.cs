@@ -28,5 +28,10 @@ namespace Classes
                 lstFaces.Items.Add(face);
             }
         }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstFaces.Items.Remove(lstFaces.SelectedItem);
+        }
     }
 }
