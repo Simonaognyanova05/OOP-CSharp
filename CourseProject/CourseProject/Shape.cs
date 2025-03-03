@@ -6,15 +6,28 @@ using System.Threading.Tasks;
 
 namespace CourseProject
 {
-    internal class Shape
+    public class Shape
     {
         public string Type { get; set; }
-        public int X {  get; set; }
-        public int Y { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
 
         public override string ToString()
         {
-            return $"{Type} - X: {X}; Y: {Y}";
+            return $"{Type} - X: {X}, Y: {Y}";
+        }
+        public virtual double CalculateArea()
+        {
+            return X * Y;
+        }
+    }
+
+
+    public class Square : Shape
+    {
+        public override double CalculateArea()
+        {
+            return X * Y; 
         }
     }
 }

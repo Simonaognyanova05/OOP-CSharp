@@ -40,7 +40,7 @@
             this.pnlFigures = new System.Windows.Forms.Panel();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.Label();
-            this.btnView = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblType
@@ -129,7 +129,7 @@
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(455, 313);
+            this.txtArea.Location = new System.Drawing.Point(455, 238);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(218, 26);
             this.txtArea.TabIndex = 11;
@@ -137,28 +137,28 @@
             // lblArea
             // 
             this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(402, 313);
+            this.lblArea.Location = new System.Drawing.Point(402, 238);
             this.lblArea.Name = "lblArea";
             this.lblArea.Size = new System.Drawing.Size(47, 20);
             this.lblArea.TabIndex = 12;
             this.lblArea.Text = "Area:";
             // 
-            // btnView
+            // button1
             // 
-            this.btnView.Location = new System.Drawing.Point(455, 225);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(123, 41);
-            this.btnView.TabIndex = 13;
-            this.btnView.Text = "View figures";
-            this.btnView.UseVisualStyleBackColor = true;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            this.button1.Location = new System.Drawing.Point(714, 231);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(123, 41);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Calc Area";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 351);
-            this.Controls.Add(this.btnView);
+            this.ClientSize = new System.Drawing.Size(1019, 289);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.txtArea);
             this.Controls.Add(this.pnlFigures);
@@ -192,7 +192,7 @@
         private System.Windows.Forms.Panel pnlFigures;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label lblArea;
-        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -26,11 +26,13 @@ namespace CourseProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string type = txtType.Text;
-            int x = int.Parse(txtX.Text);
-            int y = int.Parse(txtY.Text);
+            double x = double.Parse(txtX.Text);
+            double y = double.Parse(txtY.Text);
 
-            shapes.Add(new Shape { Type = type, X = x, Y = y });
-            lstFigures.Items.Add($"{type} - X: {x}; Y: {y}");
+            Shape shape = new Shape { Type = type, X = x, Y = y };
+
+            shapes.Add(shape);
+            lstFigures.Items.Add(shape);  
 
             txtType.Text = "";
             txtX.Text = "";
@@ -39,6 +41,17 @@ namespace CourseProject
 
         private void btnView_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Shape selected = lstFigures.SelectedItem as Shape;
+            string area = (selected.CalculateArea()).ToString();
+            txtArea.Text = area;
         }
     }
 }
