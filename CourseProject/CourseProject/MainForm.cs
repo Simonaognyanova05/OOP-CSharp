@@ -26,10 +26,10 @@ namespace CourseProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string type = txtType.Text;
-            double x = double.Parse(txtX.Text);
-            double y = double.Parse(txtY.Text);
+            double a = double.Parse(txtX.Text);
+            double b = double.Parse(txtY.Text);
 
-            Shape shape = new Shape { Type = type, X = x, Y = y };
+            Shape shape = new Shape { Type = type, A = a, B = b };
 
             shapes.Add(shape);
             lstFigures.Items.Add(shape);  

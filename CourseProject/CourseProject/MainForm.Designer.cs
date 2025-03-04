@@ -37,7 +37,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblFigures = new System.Windows.Forms.Label();
             this.lstFigures = new System.Windows.Forms.ListBox();
-            this.pnlFigures = new System.Windows.Forms.Panel();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -59,7 +58,7 @@
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(24, 20);
             this.lblX.TabIndex = 1;
-            this.lblX.Text = "X:";
+            this.lblX.Text = "A:";
             // 
             // lblY
             // 
@@ -68,7 +67,7 @@
             this.lblY.Name = "lblY";
             this.lblY.Size = new System.Drawing.Size(24, 20);
             this.lblY.TabIndex = 2;
-            this.lblY.Text = "Y:";
+            this.lblY.Text = "B:";
             // 
             // txtType
             // 
@@ -120,13 +119,6 @@
             this.lstFigures.Size = new System.Drawing.Size(218, 184);
             this.lstFigures.TabIndex = 8;
             // 
-            // pnlFigures
-            // 
-            this.pnlFigures.Location = new System.Drawing.Point(714, 35);
-            this.pnlFigures.Name = "pnlFigures";
-            this.pnlFigures.Size = new System.Drawing.Size(273, 184);
-            this.pnlFigures.TabIndex = 9;
-            // 
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(455, 238);
@@ -145,7 +137,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(714, 231);
+            this.button1.Location = new System.Drawing.Point(550, 283);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
             this.button1.TabIndex = 13;
@@ -157,11 +149,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1019, 289);
+            this.ClientSize = new System.Drawing.Size(704, 336);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.txtArea);
-            this.Controls.Add(this.pnlFigures);
             this.Controls.Add(this.lstFigures);
             this.Controls.Add(this.lblFigures);
             this.Controls.Add(this.btnAdd);
@@ -189,7 +180,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblFigures;
         private System.Windows.Forms.ListBox lstFigures;
-        private System.Windows.Forms.Panel pnlFigures;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.Button button1;
