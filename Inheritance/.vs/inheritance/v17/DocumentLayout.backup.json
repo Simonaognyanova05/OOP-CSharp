@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\inheritance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|c:\\users\\simon\\source\\repos\\inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|solutionrelative:inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|c:\\users\\simon\\source\\repos\\inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|solutionrelative:inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs",
+              "RelativeDocumentMoniker": "inheritance\\Form1.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs*",
+              "RelativeToolTip": "inheritance\\Form1.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:35:49.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs",
+              "RelativeDocumentMoniker": "inheritance\\Form1.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs [Design]*",
+              "RelativeToolTip": "inheritance\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:35:33.908Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
