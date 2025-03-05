@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\inheritance\\",
+  "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|c:\\users\\simon\\source\\repos\\inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\inheritance\\task.2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|solutionrelative:task.2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|solutionrelative:inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|c:\\users\\simon\\source\\repos\\inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\inheritance\\task.2\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|solutionrelative:task.2\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\inheritance\\task.2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1C47FA11-EFB9-4A44-A101-D789155EFC0A}|Task.2\\Task.2.csproj|solutionrelative:task.2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3D0B281C-6EE8-4546-952A-87A6A437EB22}|inheritance\\inheritance.csproj|solutionrelative:inheritance\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -24,26 +36,64 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Form1.cs",
+              "RelativeDocumentMoniker": "Task.2\\Form1.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Form1.cs",
+              "RelativeToolTip": "Task.2\\Form1.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:46:29.609Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rectangle.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Rectangle.cs",
+              "RelativeDocumentMoniker": "Task.2\\Rectangle.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Rectangle.cs",
+              "RelativeToolTip": "Task.2\\Rectangle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:44:00.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Form1.cs",
+              "RelativeDocumentMoniker": "Task.2\\Form1.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\Task.2\\Form1.cs [Design]",
+              "RelativeToolTip": "Task.2\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T21:43:11.049Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\inheritance\\Form1.cs",
               "RelativeDocumentMoniker": "inheritance\\Form1.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs*",
-              "RelativeToolTip": "inheritance\\Form1.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCAAAAAxAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\inheritance\\Form1.cs",
+              "RelativeToolTip": "inheritance\\Form1.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T21:35:49.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Inheritance\\inheritance\\Form1.cs",
               "RelativeDocumentMoniker": "inheritance\\Form1.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs [Design]*",
-              "RelativeToolTip": "inheritance\\Form1.cs [Design]*",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\inheritance\\inheritance\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\source\\repos\\inheritance\\inheritance\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T21:35:33.908Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-05T21:35:33.908Z"
             }
           ]
         }
