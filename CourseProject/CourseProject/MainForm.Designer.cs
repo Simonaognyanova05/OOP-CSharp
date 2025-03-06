@@ -40,6 +40,7 @@
             this.txtArea = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblType
@@ -54,20 +55,22 @@
             // lblX
             // 
             this.lblX.AutoSize = true;
-            this.lblX.Location = new System.Drawing.Point(106, 76);
+            this.lblX.Location = new System.Drawing.Point(106, 164);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(24, 20);
             this.lblX.TabIndex = 1;
             this.lblX.Text = "A:";
+            this.lblX.Visible = false;
             // 
             // lblY
             // 
             this.lblY.AutoSize = true;
-            this.lblY.Location = new System.Drawing.Point(106, 131);
+            this.lblY.Location = new System.Drawing.Point(106, 219);
             this.lblY.Name = "lblY";
             this.lblY.Size = new System.Drawing.Size(24, 20);
             this.lblY.TabIndex = 2;
             this.lblY.Text = "B:";
+            this.lblY.Visible = false;
             // 
             // txtType
             // 
@@ -78,26 +81,29 @@
             // 
             // txtX
             // 
-            this.txtX.Location = new System.Drawing.Point(145, 76);
+            this.txtX.Location = new System.Drawing.Point(145, 164);
             this.txtX.Name = "txtX";
             this.txtX.Size = new System.Drawing.Size(202, 26);
             this.txtX.TabIndex = 4;
+            this.txtX.Visible = false;
             // 
             // txtY
             // 
-            this.txtY.Location = new System.Drawing.Point(145, 118);
+            this.txtY.Location = new System.Drawing.Point(145, 206);
             this.txtY.Name = "txtY";
             this.txtY.Size = new System.Drawing.Size(202, 26);
             this.txtY.TabIndex = 5;
+            this.txtY.Visible = false;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(34, 176);
+            this.btnAdd.Location = new System.Drawing.Point(34, 264);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(123, 41);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add figure";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Visible = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblFigures
@@ -145,11 +151,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(215, 67);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(132, 63);
+            this.btnCheck.TabIndex = 14;
+            this.btnCheck.Text = "Check your figure";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.button2_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 336);
+            this.ClientSize = new System.Drawing.Size(704, 339);
+            this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.txtArea);
@@ -183,6 +200,7 @@
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label lblArea;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCheck;
     }
 }
 

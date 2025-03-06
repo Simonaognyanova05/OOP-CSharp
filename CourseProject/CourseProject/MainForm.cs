@@ -66,5 +66,42 @@ namespace CourseProject
             string area = (selected.CalculateArea()).ToString();
             txtArea.Text = area;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string type = txtType.Text;
+
+            switch (type)
+            {
+                case "Rectangle":
+                    lblX.Visible = true;
+                    lblY.Visible = true;
+                    txtX.Visible = true;
+                    txtY.Visible = true;
+                    btnAdd.Visible = true;
+                    break;
+                case "Square":
+                    txtX.Visible = true;
+                    lblX.Visible = true;
+                    btnAdd.Visible = true;
+                    break;
+                case "Triangle":
+                    txtX.Visible = true;
+                    lblX.Visible = true;
+                    txtY.Visible = true;
+                    lblY.Visible = true;
+                    lblY.Text = "H: ";
+                    btnAdd.Visible = true;
+                    break;
+                case "Circle":
+                    txtX.Visible = true;
+                    lblX.Visible = true;
+                    lblX.Text = "R: ";
+                    btnAdd.Visible = true;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
