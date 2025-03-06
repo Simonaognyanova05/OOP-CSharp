@@ -27,15 +27,23 @@ namespace CourseProject
         {
             string type = txtType.Text;
             double a = double.Parse(txtX.Text);
-            double b = double.Parse(txtY.Text);
+            double b = txtY.Text != "" ? double.Parse(txtY.Text) : 0;
 
             Shape shape = null;
             Rectangle rect = new Rectangle{ Width = a, Height = b};
             Circle circle = new Circle { Radius = a };
+            Square square = new Square { A = a };
+            Triangle triangle = new Triangle { A = a, H = b };
             switch (type)
             {
                 case "Rectangle":
                     shape = rect;
+                    break;
+                case "Square":
+                    shape = square;
+                    break;
+                case "Triangle":
+                    shape = triangle;
                     break;
                 case "Circle":
                     shape = circle;
@@ -50,14 +58,12 @@ namespace CourseProject
             txtType.Text = "";
             txtX.Text = "";
             txtY.Text = "";
-        }
 
-        private void btnView_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+            lblX.Visible = false;
+            lblY.Visible = false;
+            txtX.Visible = false;
+            txtY.Visible = false;
+            btnAdd.Visible = false;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -100,6 +106,7 @@ namespace CourseProject
                     btnAdd.Visible = true;
                     break;
                 default:
+                    MessageBox.Show("The figure you selected does not exist!");
                     break;
             }
         }

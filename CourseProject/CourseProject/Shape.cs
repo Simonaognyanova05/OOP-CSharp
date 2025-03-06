@@ -31,6 +31,33 @@ namespace CourseProject
             return $"Width: {Width}, Height: {Height}";
         }
     }
+    class Square : Shape
+    {
+        public double A { get; set; }
+        public Square()
+        {
+            ShapeType = "Square";
+        }
+        public override double CalculateArea() { return A * A; }
+        protected override string GetDescription()
+        {
+            return $"A: {A}, A: {A}";
+        }
+    }
+    class Triangle : Shape
+    {
+        public double A { get; set; }
+        public double H { get; set; }
+        public Triangle()
+        {
+            ShapeType = "Triangle";
+        }
+        public override double CalculateArea() { return (A * H) / 2; }
+        protected override string GetDescription()
+        {
+            return $"A: {A}, H: {H}";
+        }
+    }
 
     class Circle : Shape
     {
