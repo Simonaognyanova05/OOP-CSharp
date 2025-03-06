@@ -29,10 +29,23 @@ namespace CourseProject
             double a = double.Parse(txtX.Text);
             double b = double.Parse(txtY.Text);
 
-            Shape shape = new Shape { Type = type, A = a, B = b };
-
+            Shape shape = null;
+            Rectangle rect = new Rectangle{ Width = a, Height = b};
+            Circle circle = new Circle { Radius = a };
+            switch (type)
+            {
+                case "Rectangle":
+                    shape = rect;
+                    break;
+                case "Circle":
+                    shape = circle;
+                    break;
+                default:
+                    break;
+            }
             shapes.Add(shape);
-            lstFigures.Items.Add(shape);  
+            lstFigures.Items.Add(shape);
+            
 
             txtType.Text = "";
             txtX.Text = "";

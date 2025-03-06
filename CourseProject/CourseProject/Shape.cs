@@ -6,49 +6,46 @@ using System.Threading.Tasks;
 
 namespace CourseProject
 {
-    public class Shape
+    abstract class Shape
     {
-        public string Type { get; set; }
-        public double A { get; set; }
-        public double B { get; set; }
-
+        public string ShapeType { get; protected set; }
+        public abstract double CalculateArea();
         public override string ToString()
         {
-            return $"{Type} - A: {A}, B: {B}";
+            return $"{ShapeType} - {GetDescription()}";
         }
-        public virtual double CalculateArea()
+        protected abstract string GetDescription();
+    }
+
+    class Rectangle : Shape
+    {
+        public double Width { get; set; }
+        public double Height { get; set; }
+        public Rectangle()
         {
-            return A * B;
+            ShapeType = "Rectangle";
+        }
+        public override double CalculateArea() { return Width * Height; }
+        protected override string GetDescription()
+        {
+            return $"Width: {Width}, Height: {Height}";
         }
     }
 
-
-    public class Square : Shape
+    class Circle : Shape
     {
-        public override double CalculateArea()
+        public double Radius { get; set; }
+        public Circle()
         {
-            return A * A; 
+            ShapeType = "Circle";
         }
-    }
-    public class Rectangle : Shape
-    {
         public override double CalculateArea()
         {
-            return A * B;
+            return Math.Round((Math.PI * Radius * Radius), 2);
         }
-    }
-    public class Triangle : Shape
-    {
-        public override double CalculateArea()
+        protected override string GetDescription()
         {
-            return (A * B) / 2;
-        }
-    }
-    public class Circle : Shape
-    {
-        public override double CalculateArea()
-        {
-            return Math.Round((Math.PI * A * A), 2);
+            return $"Radius: {Radius}";
         }
     }
 }
