@@ -13,6 +13,9 @@ namespace CourseProject
     public partial class MainForm : Form
     {
         List<Shape> shapes = new List<Shape>();
+        private Shape selectedShape; // Променлива за съхранение на избраната фигура
+        private bool isDragging = false;
+        private Point offset; // За изместване на фигурата с мишката
         public MainForm()
         {
             InitializeComponent();
@@ -26,14 +29,16 @@ namespace CourseProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string type = txtType.Text;
-            double a = double.Parse(txtX.Text);
-            double b = txtY.Text != "" ? double.Parse(txtY.Text) : 0;
+            double a = double.Parse(txtA.Text);
+            double b = txtB.Text != "" ? double.Parse(txtB.Text) : 0;
+            float x = float.Parse(txtX.Text);
+            float y = float.Parse(txtY.Text);
 
             Shape shape = null;
-            Rectangle rect = new Rectangle{ Width = a, Height = b};
-            Circle circle = new Circle { Radius = a };
-            Square square = new Square { A = a };
-            Triangle triangle = new Triangle { A = a, H = b };
+            Rectangle rect = new Rectangle{ Width = a, Height = b, X = x, Y = y};
+            Circle circle = new Circle { Radius = a, X = x, Y = y };
+            Square square = new Square { A = a, X = x, Y = y };
+            Triangle triangle = new Triangle { A = a, H = b, X = x, Y = y };
             switch (type)
             {
                 case "Rectangle":
@@ -56,13 +61,13 @@ namespace CourseProject
             
 
             txtType.Text = "";
-            txtX.Text = "";
-            txtY.Text = "";
+            txtA.Text = "";
+            txtB.Text = "";
 
-            lblX.Visible = false;
-            lblY.Visible = false;
-            txtX.Visible = false;
-            txtY.Visible = false;
+            lblA.Visible = false;
+            lblB.Visible = false;
+            txtA.Visible = false;
+            txtB.Visible = false;
             btnAdd.Visible = false;
         }
 
@@ -80,35 +85,104 @@ namespace CourseProject
             switch (type)
             {
                 case "Rectangle":
+                    lblA.Visible = true;
+                    lblB.Visible = true;
+                    txtA.Visible = true;
+                    txtB.Visible = true;
+                    btnAdd.Visible = true;
                     lblX.Visible = true;
                     lblY.Visible = true;
                     txtX.Visible = true;
                     txtY.Visible = true;
-                    btnAdd.Visible = true;
                     break;
                 case "Square":
-                    txtX.Visible = true;
-                    lblX.Visible = true;
+                    txtA.Visible = true;
+                    lblA.Visible = true;
                     btnAdd.Visible = true;
+                    lblX.Visible = true;
+                    lblY.Visible = true;
+                    txtX.Visible = true;
+                    txtY.Visible = true;
                     break;
                 case "Triangle":
-                    txtX.Visible = true;
-                    lblX.Visible = true;
-                    txtY.Visible = true;
-                    lblY.Visible = true;
-                    lblY.Text = "H: ";
+                    txtA.Visible = true;
+                    lblA.Visible = true;
+                    txtB.Visible = true;
+                    lblB.Visible = true;
+                    lblB.Text = "H: ";
                     btnAdd.Visible = true;
+                    lblX.Visible = true;
+                    lblY.Visible = true;
+                    txtX.Visible = true;
+                    txtY.Visible = true;
                     break;
                 case "Circle":
-                    txtX.Visible = true;
-                    lblX.Visible = true;
-                    lblX.Text = "R: ";
+                    txtA.Visible = true;
+                    lblA.Visible = true;
+                    lblA.Text = "R: ";
                     btnAdd.Visible = true;
+                    lblX.Visible = true;
+                    lblY.Visible = true;
+                    txtX.Visible = true;
+                    txtY.Visible = true;
                     break;
                 default:
                     MessageBox.Show("The figure you selected does not exist!");
                     break;
             }
         }
+
+        private void btnDraw_Click(object sender, EventArgs e)
+        {
+            selectedShape = lstFigures.SelectedItem as Shape;
+
+            if (selectedShape != null)
+            {
+                // Ако фигурата е избрана, изчисти панела и го прерисувай
+                panel1.Invalidate();
+            }
+            else
+            {
+                MessageBox.Show("Please select a shape to draw.");
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            if (selectedShape != null)
+            {
+                Graphics g = e.Graphics;
+
+                // Рисуваме фигурата в зависимост от нейния тип
+                if (selectedShape is Rectangle rect)
+                {
+                    g.DrawRectangle(Pens.Black, selectedShape.X, selectedShape.Y, (float)rect.Width, (float)rect.Height);
+                }
+                else if (selectedShape is Circle circle)
+                {
+                    g.DrawEllipse(Pens.Black, selectedShape.X, selectedShape.Y, (float)(circle.Radius * 2), (float)(circle.Radius * 2));
+                }
+                else if (selectedShape is Square square)
+                {
+                    g.DrawRectangle(Pens.Black, selectedShape.X, selectedShape.Y, (float)square.A, (float)square.A);
+                }
+                else if (selectedShape is Triangle triangle)
+                {
+                    PointF[] points = new PointF[]
+                    {
+                new PointF(selectedShape.X, selectedShape.Y),
+                new PointF(selectedShape.X + (float)triangle.A, selectedShape.Y),
+                new PointF(selectedShape.X + (float)(triangle.A / 2), selectedShape.Y - (float)triangle.H)
+                    };
+                    g.DrawPolygon(Pens.Black, points);
+                }
+            }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

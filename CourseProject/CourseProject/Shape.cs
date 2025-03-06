@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace CourseProject
 {
-    abstract class Shape
+    public abstract class Shape
     {
         public string ShapeType { get; protected set; }
+        public float X { get; set; }
+        public float Y { get; set; }
         public abstract double CalculateArea();
         public override string ToString()
         {

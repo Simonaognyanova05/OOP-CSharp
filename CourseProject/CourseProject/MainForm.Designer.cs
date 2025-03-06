@@ -29,18 +29,24 @@
         private void InitializeComponent()
         {
             this.lblType = new System.Windows.Forms.Label();
-            this.lblX = new System.Windows.Forms.Label();
-            this.lblY = new System.Windows.Forms.Label();
+            this.lblA = new System.Windows.Forms.Label();
+            this.lblB = new System.Windows.Forms.Label();
             this.txtType = new System.Windows.Forms.TextBox();
-            this.txtX = new System.Windows.Forms.TextBox();
-            this.txtY = new System.Windows.Forms.TextBox();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.lblFigures = new System.Windows.Forms.Label();
             this.lstFigures = new System.Windows.Forms.ListBox();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.lblArea = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcArea = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.btnDraw = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtY = new System.Windows.Forms.TextBox();
+            this.txtX = new System.Windows.Forms.TextBox();
+            this.lblY = new System.Windows.Forms.Label();
+            this.lblX = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblType
@@ -52,25 +58,25 @@
             this.lblType.TabIndex = 0;
             this.lblType.Text = "Type of figure:";
             // 
-            // lblX
+            // lblA
             // 
-            this.lblX.AutoSize = true;
-            this.lblX.Location = new System.Drawing.Point(106, 164);
-            this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(24, 20);
-            this.lblX.TabIndex = 1;
-            this.lblX.Text = "A:";
-            this.lblX.Visible = false;
+            this.lblA.AutoSize = true;
+            this.lblA.Location = new System.Drawing.Point(106, 164);
+            this.lblA.Name = "lblA";
+            this.lblA.Size = new System.Drawing.Size(24, 20);
+            this.lblA.TabIndex = 1;
+            this.lblA.Text = "A:";
+            this.lblA.Visible = false;
             // 
-            // lblY
+            // lblB
             // 
-            this.lblY.AutoSize = true;
-            this.lblY.Location = new System.Drawing.Point(106, 219);
-            this.lblY.Name = "lblY";
-            this.lblY.Size = new System.Drawing.Size(24, 20);
-            this.lblY.TabIndex = 2;
-            this.lblY.Text = "B:";
-            this.lblY.Visible = false;
+            this.lblB.AutoSize = true;
+            this.lblB.Location = new System.Drawing.Point(106, 219);
+            this.lblB.Name = "lblB";
+            this.lblB.Size = new System.Drawing.Size(24, 20);
+            this.lblB.TabIndex = 2;
+            this.lblB.Text = "B:";
+            this.lblB.Visible = false;
             // 
             // txtType
             // 
@@ -79,25 +85,25 @@
             this.txtType.Size = new System.Drawing.Size(202, 26);
             this.txtType.TabIndex = 3;
             // 
-            // txtX
+            // txtA
             // 
-            this.txtX.Location = new System.Drawing.Point(145, 164);
-            this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(202, 26);
-            this.txtX.TabIndex = 4;
-            this.txtX.Visible = false;
+            this.txtA.Location = new System.Drawing.Point(145, 164);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(202, 26);
+            this.txtA.TabIndex = 4;
+            this.txtA.Visible = false;
             // 
-            // txtY
+            // txtB
             // 
-            this.txtY.Location = new System.Drawing.Point(145, 206);
-            this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(202, 26);
-            this.txtY.TabIndex = 5;
-            this.txtY.Visible = false;
+            this.txtB.Location = new System.Drawing.Point(145, 206);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(202, 26);
+            this.txtB.TabIndex = 5;
+            this.txtB.Visible = false;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(34, 264);
+            this.btnAdd.Location = new System.Drawing.Point(25, 367);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(123, 41);
             this.btnAdd.TabIndex = 6;
@@ -122,14 +128,14 @@
             this.lstFigures.ItemHeight = 20;
             this.lstFigures.Location = new System.Drawing.Point(455, 35);
             this.lstFigures.Name = "lstFigures";
-            this.lstFigures.Size = new System.Drawing.Size(218, 184);
+            this.lstFigures.Size = new System.Drawing.Size(257, 184);
             this.lstFigures.TabIndex = 8;
             // 
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(455, 238);
             this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(218, 26);
+            this.txtArea.Size = new System.Drawing.Size(257, 26);
             this.txtArea.TabIndex = 11;
             // 
             // lblArea
@@ -141,15 +147,15 @@
             this.lblArea.TabIndex = 12;
             this.lblArea.Text = "Area:";
             // 
-            // button1
+            // btnCalcArea
             // 
-            this.button1.Location = new System.Drawing.Point(550, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 41);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Calc Area";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnCalcArea.Location = new System.Drawing.Point(589, 286);
+            this.btnCalcArea.Name = "btnCalcArea";
+            this.btnCalcArea.Size = new System.Drawing.Size(123, 41);
+            this.btnCalcArea.TabIndex = 13;
+            this.btnCalcArea.Text = "Calc Area";
+            this.btnCalcArea.UseVisualStyleBackColor = true;
+            this.btnCalcArea.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnCheck
             // 
@@ -161,26 +167,86 @@
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnDraw
+            // 
+            this.btnDraw.Location = new System.Drawing.Point(460, 286);
+            this.btnDraw.Name = "btnDraw";
+            this.btnDraw.Size = new System.Drawing.Size(123, 41);
+            this.btnDraw.TabIndex = 15;
+            this.btnDraw.Text = "Draw figure";
+            this.btnDraw.UseVisualStyleBackColor = true;
+            this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(718, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(458, 310);
+            this.panel1.TabIndex = 16;
+            // 
+            // txtY
+            // 
+            this.txtY.Location = new System.Drawing.Point(145, 304);
+            this.txtY.Name = "txtY";
+            this.txtY.Size = new System.Drawing.Size(202, 26);
+            this.txtY.TabIndex = 20;
+            this.txtY.Visible = false;
+            // 
+            // txtX
+            // 
+            this.txtX.Location = new System.Drawing.Point(145, 262);
+            this.txtX.Name = "txtX";
+            this.txtX.Size = new System.Drawing.Size(202, 26);
+            this.txtX.TabIndex = 19;
+            this.txtX.Visible = false;
+            // 
+            // lblY
+            // 
+            this.lblY.AutoSize = true;
+            this.lblY.Location = new System.Drawing.Point(106, 310);
+            this.lblY.Name = "lblY";
+            this.lblY.Size = new System.Drawing.Size(24, 20);
+            this.lblY.TabIndex = 18;
+            this.lblY.Text = "Y:";
+            this.lblY.Visible = false;
+            // 
+            // lblX
+            // 
+            this.lblX.AutoSize = true;
+            this.lblX.Location = new System.Drawing.Point(106, 262);
+            this.lblX.Name = "lblX";
+            this.lblX.Size = new System.Drawing.Size(24, 20);
+            this.lblX.TabIndex = 17;
+            this.lblX.Text = "X:";
+            this.lblX.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 339);
+            this.ClientSize = new System.Drawing.Size(1188, 456);
+            this.Controls.Add(this.txtY);
+            this.Controls.Add(this.txtX);
+            this.Controls.Add(this.lblY);
+            this.Controls.Add(this.lblX);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDraw);
             this.Controls.Add(this.btnCheck);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalcArea);
             this.Controls.Add(this.lblArea);
             this.Controls.Add(this.txtArea);
             this.Controls.Add(this.lstFigures);
             this.Controls.Add(this.lblFigures);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtY);
-            this.Controls.Add(this.txtX);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.txtType);
-            this.Controls.Add(this.lblY);
-            this.Controls.Add(this.lblX);
+            this.Controls.Add(this.lblB);
+            this.Controls.Add(this.lblA);
             this.Controls.Add(this.lblType);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,18 +255,24 @@
         #endregion
 
         private System.Windows.Forms.Label lblType;
-        private System.Windows.Forms.Label lblX;
-        private System.Windows.Forms.Label lblY;
+        private System.Windows.Forms.Label lblA;
+        private System.Windows.Forms.Label lblB;
         private System.Windows.Forms.TextBox txtType;
-        private System.Windows.Forms.TextBox txtX;
-        private System.Windows.Forms.TextBox txtY;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label lblFigures;
         private System.Windows.Forms.ListBox lstFigures;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Label lblArea;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalcArea;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Button btnDraw;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtY;
+        private System.Windows.Forms.TextBox txtX;
+        private System.Windows.Forms.Label lblY;
+        private System.Windows.Forms.Label lblX;
     }
 }
 
