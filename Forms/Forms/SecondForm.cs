@@ -12,12 +12,28 @@ namespace Forms
 {
     public partial class SecondForm : Form
     {
-        public SecondForm(string text)
+        private int x, y, width, height;
+        public SecondForm(int x, int y, int width, int height)
         {
             InitializeComponent();
-            label1.Text = text;
-        }
+            this.x = x;
+            this.y = y;
+            this.width = width;
+            this.height = height;
 
+            this.Text = "Draw Form";
+            this.BackColor = Color.White;
+            this.Size = new Size(400, 400);
+        }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            Graphics g = e.Graphics;
+            Pen pen = new Pen(Color.Black, 2);
+
+            g.DrawRectangle(pen, x, y, width, height);
+        }
         private void SecondForm_Load(object sender, EventArgs e)
         {
 

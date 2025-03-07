@@ -19,9 +19,20 @@ namespace Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = textBox1.Text;
-            SecondForm secondForm = new SecondForm(text);
-            secondForm.ShowDialog();
+            try
+            {
+                int x = int.Parse(textBox1.Text);
+                int y = int.Parse(textBox2.Text);
+                int width = int.Parse(textBox3.Text);
+                int height = int.Parse(textBox4.Text);
+
+                SecondForm drawForm = new SecondForm(x, y, width, height);
+                drawForm.Show();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Моля, въведете валидни числови стойности!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

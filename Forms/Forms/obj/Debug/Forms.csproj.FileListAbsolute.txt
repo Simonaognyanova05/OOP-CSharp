@@ -9,3 +9,14 @@ C:\Users\simon\source\repos\Forms\Forms\obj\Debug\Forms.csproj.GenerateResource.
 C:\Users\simon\source\repos\Forms\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Users\simon\source\repos\Forms\Forms\obj\Debug\Forms.exe
 C:\Users\simon\source\repos\Forms\Forms\obj\Debug\Forms.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\bin\Debug\Forms.exe.config
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\bin\Debug\Forms.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\bin\Debug\Forms.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.csproj.AssemblyReference.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.MainForm.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.Properties.Resources.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.SecondForm.resources
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.exe
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\Forms\Forms\obj\Debug\Forms.pdb

@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\Forms\\",
+  "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|c:\\users\\simon\\source\\repos\\forms\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\forms\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|c:\\users\\simon\\source\\repos\\forms\\forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|solutionrelative:forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|c:\\users\\simon\\source\\repos\\forms\\forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|solutionrelative:forms\\secondform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|c:\\users\\simon\\source\\repos\\forms\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2D73C76A-C817-4ADD-8BBF-AA37FFC87EBD}|Forms\\Forms.csproj|solutionrelative:forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SecondForm.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\SecondForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\SecondForm.cs",
               "RelativeDocumentMoniker": "Forms\\SecondForm.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\SecondForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\SecondForm.cs",
               "RelativeToolTip": "Forms\\SecondForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBEAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T16:33:07.211Z",
               "EditorCaption": ""
@@ -45,11 +45,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\MainForm.cs",
               "RelativeToolTip": "Forms\\MainForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T16:31:51.711Z",
               "EditorCaption": ""
@@ -58,9 +58,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SecondForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\SecondForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\SecondForm.cs",
               "RelativeDocumentMoniker": "Forms\\SecondForm.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\SecondForm.cs [Design]",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\SecondForm.cs [Design]",
               "RelativeToolTip": "Forms\\SecondForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T16:30:37.49Z",
@@ -70,9 +70,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\simon\\source\\repos\\Forms\\Forms\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\Forms\\Forms\\MainForm.cs [Design]",
               "RelativeToolTip": "Forms\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T16:29:25.404Z",
