@@ -13,9 +13,7 @@ namespace CourseProject
     public partial class MainForm : Form
     {
         List<Shape> shapes = new List<Shape>();
-        private Shape selectedShape; // Променлива за съхранение на избраната фигура
-        private bool isDragging = false;
-        private Point offset; // За изместване на фигурата с мишката
+        private Shape selectedShape;
         public MainForm()
         {
             InitializeComponent();
@@ -145,14 +143,16 @@ namespace CourseProject
             drawForm.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = lstFigures.SelectedIndex;
+            shapes.RemoveAt(selectedIndex); 
+            lstFigures.Items.RemoveAt(selectedIndex);
         }
     }
 }

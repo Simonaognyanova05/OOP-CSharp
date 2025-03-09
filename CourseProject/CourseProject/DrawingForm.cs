@@ -18,8 +18,6 @@ namespace CourseProject
         {
             InitializeComponent();
             this.shape = shape;
-
-            // Настройки на формата
             this.Text = "Draw Shape";
             this.BackColor = Color.White;
             this.Size = new Size(500, 500);

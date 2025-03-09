@@ -46,6 +46,7 @@
             this.txtX = new System.Windows.Forms.TextBox();
             this.lblY = new System.Windows.Forms.Label();
             this.lblX = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblType
@@ -102,7 +103,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(25, 367);
+            this.btnAdd.Location = new System.Drawing.Point(224, 350);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(123, 41);
             this.btnAdd.TabIndex = 6;
@@ -127,14 +128,14 @@
             this.lstFigures.ItemHeight = 20;
             this.lstFigures.Location = new System.Drawing.Point(455, 35);
             this.lstFigures.Name = "lstFigures";
-            this.lstFigures.Size = new System.Drawing.Size(257, 184);
+            this.lstFigures.Size = new System.Drawing.Size(386, 184);
             this.lstFigures.TabIndex = 8;
             // 
             // txtArea
             // 
             this.txtArea.Location = new System.Drawing.Point(455, 238);
             this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(257, 26);
+            this.txtArea.Size = new System.Drawing.Size(386, 26);
             this.txtArea.TabIndex = 11;
             // 
             // lblArea
@@ -212,11 +213,22 @@
             this.lblX.Text = "X:";
             this.lblX.Visible = false;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(718, 286);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(123, 41);
+            this.btnDelete.TabIndex = 21;
+            this.btnDelete.Text = "Delete figure";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 456);
+            this.ClientSize = new System.Drawing.Size(869, 419);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtY);
             this.Controls.Add(this.txtX);
             this.Controls.Add(this.lblY);
@@ -263,6 +275,7 @@
         private System.Windows.Forms.TextBox txtX;
         private System.Windows.Forms.Label lblY;
         private System.Windows.Forms.Label lblX;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
