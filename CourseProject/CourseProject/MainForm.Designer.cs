@@ -42,7 +42,6 @@
             this.btnCalcArea = new System.Windows.Forms.Button();
             this.btnCheck = new System.Windows.Forms.Button();
             this.btnDraw = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.txtY = new System.Windows.Forms.TextBox();
             this.txtX = new System.Windows.Forms.TextBox();
             this.lblY = new System.Windows.Forms.Label();
@@ -177,13 +176,6 @@
             this.btnDraw.UseVisualStyleBackColor = true;
             this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(718, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 310);
-            this.panel1.TabIndex = 16;
-            // 
             // txtY
             // 
             this.txtY.Location = new System.Drawing.Point(145, 304);
@@ -224,12 +216,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 456);
+            this.ClientSize = new System.Drawing.Size(752, 456);
             this.Controls.Add(this.txtY);
             this.Controls.Add(this.txtX);
             this.Controls.Add(this.lblY);
             this.Controls.Add(this.lblX);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDraw);
             this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.btnCalcArea);
@@ -268,7 +259,6 @@
         private System.Windows.Forms.Button btnCalcArea;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Button btnDraw;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtY;
         private System.Windows.Forms.TextBox txtX;
         private System.Windows.Forms.Label lblY;

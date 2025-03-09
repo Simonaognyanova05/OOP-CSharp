@@ -135,48 +135,11 @@ namespace CourseProject
         private void btnDraw_Click(object sender, EventArgs e)
         {
             selectedShape = lstFigures.SelectedItem as Shape;
-
-            if (selectedShape != null)
-            {
-                // Ако фигурата е избрана, изчисти панела и го прерисувай
-                panel1.Invalidate();
-            }
-            else
-            {
-                MessageBox.Show("Please select a shape to draw.");
-            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            if (selectedShape != null)
-            {
-                Graphics g = e.Graphics;
-
-                // Рисуваме фигурата в зависимост от нейния тип
-                if (selectedShape is Rectangle rect)
-                {
-                    g.DrawRectangle(Pens.Black, selectedShape.X, selectedShape.Y, (float)rect.Width, (float)rect.Height);
-                }
-                else if (selectedShape is Circle circle)
-                {
-                    g.DrawEllipse(Pens.Black, selectedShape.X, selectedShape.Y, (float)(circle.Radius * 2), (float)(circle.Radius * 2));
-                }
-                else if (selectedShape is Square square)
-                {
-                    g.DrawRectangle(Pens.Black, selectedShape.X, selectedShape.Y, (float)square.A, (float)square.A);
-                }
-                else if (selectedShape is Triangle triangle)
-                {
-                    PointF[] points = new PointF[]
-                    {
-                new PointF(selectedShape.X, selectedShape.Y),
-                new PointF(selectedShape.X + (float)triangle.A, selectedShape.Y),
-                new PointF(selectedShape.X + (float)(triangle.A / 2), selectedShape.Y - (float)triangle.H)
-                    };
-                    g.DrawPolygon(Pens.Black, points);
-                }
-            }
+            
         }
 
         private void MainForm_Load(object sender, EventArgs e)

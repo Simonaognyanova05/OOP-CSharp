@@ -8,3 +8,4 @@ C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\C
 C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
 C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.exe
 C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
+C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.DrawingForm.resources

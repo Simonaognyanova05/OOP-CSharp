@@ -11,6 +11,8 @@ namespace CourseProject
         public string ShapeType { get; protected set; }
         public float X { get; set; }
         public float Y { get; set; }
+        public double Width { get; set; }
+        public double Height { get; set; }
         public abstract double CalculateArea();
         public override string ToString()
         {

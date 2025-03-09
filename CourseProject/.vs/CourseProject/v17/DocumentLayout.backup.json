@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +30,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shape.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
+              "RelativeDocumentMoniker": "CourseProject\\Shape.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs*",
+              "RelativeToolTip": "CourseProject\\Shape.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:57:21.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DrawingForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
+              "RelativeDocumentMoniker": "CourseProject\\DrawingForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs*",
+              "RelativeToolTip": "CourseProject\\DrawingForm.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAA9wCUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:55:17.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DrawingForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
+              "RelativeDocumentMoniker": "CourseProject\\DrawingForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs [Design]*",
+              "RelativeToolTip": "CourseProject\\DrawingForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T16:55:11.67Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\MainForm.cs",
               "RelativeDocumentMoniker": "CourseProject\\MainForm.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\MainForm.cs*",
               "RelativeToolTip": "CourseProject\\MainForm.cs*",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAswLMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAJMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T13:31:50.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shape.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
-              "RelativeDocumentMoniker": "CourseProject\\Shape.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
-              "RelativeToolTip": "CourseProject\\Shape.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T20:10:31.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\MainForm.cs",
               "RelativeDocumentMoniker": "CourseProject\\MainForm.cs",
