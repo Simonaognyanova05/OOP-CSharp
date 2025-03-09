@@ -29,16 +29,16 @@ namespace CourseProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string type = txtType.Text;
-            double a = double.Parse(txtA.Text);
-            double b = txtB.Text != "" ? double.Parse(txtB.Text) : 0;
-            float x = float.Parse(txtX.Text);
-            float y = float.Parse(txtY.Text);
+            int a = int.Parse(txtA.Text);
+            int b = txtB.Text != "" ? int.Parse(txtB.Text) : 0;
+            int x = int.Parse(txtX.Text);
+            int y = int.Parse(txtY.Text);
 
             Shape shape = null;
-            Rectangle rect = new Rectangle{ Width = a, Height = b, X = x, Y = y};
-            Circle circle = new Circle { Radius = a, X = x, Y = y };
-            Square square = new Square { A = a, X = x, Y = y };
-            Triangle triangle = new Triangle { A = a, H = b, X = x, Y = y };
+            Rectangle rect = new Rectangle(a, b, x, y);
+            Circle circle = new Circle(a, x, y);
+            Square square = new Square (x, y, a);
+            Triangle triangle = new Triangle (a, b, x, y);
             switch (type)
             {
                 case "Rectangle":
@@ -134,7 +134,15 @@ namespace CourseProject
 
         private void btnDraw_Click(object sender, EventArgs e)
         {
-            selectedShape = lstFigures.SelectedItem as Shape;
+            selectedShape = lstFigures.SelectedIndex >= 0 ? shapes[lstFigures.SelectedIndex] : null;
+
+            if (selectedShape == null)
+            {
+                MessageBox.Show("Please select a shape to draw!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DrawingForm drawForm = new DrawingForm(selectedShape);
+            drawForm.Show();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -12,9 +12,27 @@ namespace CourseProject
 {
     public partial class DrawingForm : Form
     {
-        public DrawingForm()
+        private Shape shape;
+
+        public DrawingForm(Shape shape)
         {
             InitializeComponent();
+            this.shape = shape;
+
+            // Настройки на формата
+            this.Text = "Draw Shape";
+            this.BackColor = Color.White;
+            this.Size = new Size(500, 500);
+        }
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            if (shape != null)
+            {
+                shape.Draw(e.Graphics);
+            }
         }
     }
 }

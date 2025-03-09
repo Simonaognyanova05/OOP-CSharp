@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,75 +9,132 @@ namespace CourseProject
 {
     public abstract class Shape
     {
-        public string ShapeType { get; protected set; }
-        public float X { get; set; }
-        public float Y { get; set; }
-        public double Width { get; set; }
-        public double Height { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
+        public Color Color { get; set; } = Color.Black;
+
+        public Shape(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
         public abstract double CalculateArea();
-        public override string ToString()
-        {
-            return $"{ShapeType} - {GetDescription()}";
-        }
-        protected abstract string GetDescription();
+
+        public abstract void Draw(Graphics g);
+         public override string ToString()
+         {
+            return $"at ({X}, {Y})";
+         }
     }
 
-    class Rectangle : Shape
+    public class Square : Shape
     {
-        public double Width { get; set; }
-        public double Height { get; set; }
-        public Rectangle()
-        {
-            ShapeType = "Rectangle";
-        }
-        public override double CalculateArea() { return Width * Height; }
-        protected override string GetDescription()
-        {
-            return $"Width: {Width}, Height: {Height}";
-        }
-    }
-    class Square : Shape
-    {
-        public double A { get; set; }
-        public Square()
-        {
-            ShapeType = "Square";
-        }
-        public override double CalculateArea() { return A * A; }
-        protected override string GetDescription()
-        {
-            return $"A: {A}, A: {A}";
-        }
-    }
-    class Triangle : Shape
-    {
-        public double A { get; set; }
-        public double H { get; set; }
-        public Triangle()
-        {
-            ShapeType = "Triangle";
-        }
-        public override double CalculateArea() { return (A * H) / 2; }
-        protected override string GetDescription()
-        {
-            return $"A: {A}, H: {H}";
-        }
-    }
+        public int A { get; set; }
 
-    class Circle : Shape
-    {
-        public double Radius { get; set; }
-        public Circle()
+        public Square(int x, int y, int a) : base(x, y)
         {
-            ShapeType = "Circle";
+            A = a;
         }
+
         public override double CalculateArea()
         {
-            return Math.Round((Math.PI * Radius * Radius), 2);
+            return A * A;
         }
-        protected override string GetDescription()
+
+        public override void Draw(Graphics g)
         {
-            return $"Radius: {Radius}";
+            Pen pen = new Pen(Color, 2);
+            g.DrawRectangle(pen, X, Y, A, A);
+        }
+        public override string ToString()
+        {
+            return $"Square: Side = {A}";
+        }
+    }
+    public class Rectangle : Shape
+    {
+        public int Width { get; set; }
+        public int Height { get; set; }
+
+        public Rectangle(int x, int y, int width, int height) : base(x, y)
+        {
+            Width = width;
+            Height = height;
+        }
+
+        public override double CalculateArea()
+        {
+            return Width * Height;
+        }
+
+        public override void Draw(Graphics g)
+        {
+            Pen pen = new Pen(Color, 2);
+            g.DrawRectangle(pen, X, Y, Width, Height);
+        }
+        public override string ToString()
+        {
+            return $"Rectangle: Width = {Width}; Height = {Height}";
+        }
+    }
+    public class Circle : Shape
+    {
+        public int Radius { get; set; }
+
+        public Circle(int x, int y, int radius) : base(x, y)
+        {
+            Radius = radius;
+        }
+
+        public override double CalculateArea()
+        {
+            return Math.PI * Radius * Radius;
+        }
+
+        public override void Draw(Graphics g)
+        {
+            Pen pen = new Pen(Color, 2);
+            g.DrawEllipse(pen, X - Radius, Y - Radius, Radius * 2, Radius * 2);
+        }
+        public override string ToString()
+        {
+            return $"Circle: Radius = {Radius}";
+        }
+    }
+
+    public class Triangle : Shape
+    {
+        public int BaseLength { get; set; }
+        public int Height { get; set; }
+
+        public Triangle(int x, int y, int baseLength, int height) : base(x, y)
+        {
+            BaseLength = baseLength;
+            Height = height;
+        }
+
+        public override double CalculateArea()
+        {
+            return 0.5 * BaseLength * Height;
+        }
+
+        public override void Draw(Graphics g)
+        {
+            Pen pen = new Pen(Color, 2);
+
+            Point[] points = {
+                new Point(X, Y),
+                new Point(X + BaseLength / 2, Y - Height),
+                new Point(X - BaseLength / 2, Y - Height)
+            };
+
+            g.DrawPolygon(pen, points);
+        }
+
+        public override string ToString()
+        {
+            return $"Triangle: Side = {BaseLength}; Height = {Height}";
         }
     }
 }
