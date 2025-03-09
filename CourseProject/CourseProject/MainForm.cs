@@ -66,6 +66,10 @@ namespace CourseProject
             lblB.Visible = false;
             txtA.Visible = false;
             txtB.Visible = false;
+            lblX.Visible = false;
+            lblY.Visible = false;
+            txtX.Visible = false;
+            txtY.Visible = false;
             btnAdd.Visible = false;
         }
 
@@ -107,7 +111,7 @@ namespace CourseProject
                     lblA.Visible = true;
                     txtB.Visible = true;
                     lblB.Visible = true;
-                    lblB.Text = "H: ";
+                    lblB.Text = "Enter a value for H: ";
                     btnAdd.Visible = true;
                     lblX.Visible = true;
                     lblY.Visible = true;
@@ -117,7 +121,7 @@ namespace CourseProject
                 case "Circle":
                     txtA.Visible = true;
                     lblA.Visible = true;
-                    lblA.Text = "R: ";
+                    lblA.Text = "Enter a value for R: ";
                     btnAdd.Visible = true;
                     lblX.Visible = true;
                     lblY.Visible = true;
@@ -153,6 +157,7 @@ namespace CourseProject
             int selectedIndex = lstFigures.SelectedIndex;
             shapes.RemoveAt(selectedIndex); 
             lstFigures.Items.RemoveAt(selectedIndex);
+            MessageBox.Show("The figure was deleted successfully!");
         }
     }
 }
