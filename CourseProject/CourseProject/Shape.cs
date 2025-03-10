@@ -27,31 +27,7 @@ namespace CourseProject
             return $"at ({X}, {Y})";
          }
     }
-    public class Circle : Shape
-    {
-        public int Radius { get; set; }
-
-        public Circle(int x, int y, int radius) : base(x, y)
-        {
-            Radius = radius;
-        }
-
-        public override double CalculateArea()
-        {
-            return Math.PI * Radius * Radius;
-        }
-
-        public override void Draw(Graphics g)
-        {
-            Pen pen = new Pen(Color, 2);
-            g.DrawEllipse(pen, X - Radius, Y - Radius, Radius * 2, Radius * 2);
-        }
-        public override string ToString()
-        {
-            return $"Circle: Radius = {Radius}";
-        }
-    }
-
+ 
     public class Triangle : Shape
     {
         public int BaseLength { get; set; }
