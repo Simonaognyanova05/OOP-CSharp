@@ -9,8 +9,8 @@ namespace CourseProject
 {
     public abstract class Shape
     {
-        public int X { get; set; }
-        public int Y { get; set; }
+        protected int X { get; set; }
+        protected int Y { get; set; }
         public Color Color { get; set; } = Color.Black;
 
         public Shape(int x, int y)
