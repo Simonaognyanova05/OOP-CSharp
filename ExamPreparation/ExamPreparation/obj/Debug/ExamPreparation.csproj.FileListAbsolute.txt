@@ -1,0 +1,7 @@
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\bin\Debug\ExamPreparation.exe.config
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\bin\Debug\ExamPreparation.exe
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\bin\Debug\ExamPreparation.pdb
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\obj\Debug\ExamPreparation.csproj.AssemblyReference.cache
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\obj\Debug\ExamPreparation.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\obj\Debug\ExamPreparation.exe
+C:\Users\simon\source\repos\ExamPreparation\ExamPreparation\obj\Debug\ExamPreparation.pdb

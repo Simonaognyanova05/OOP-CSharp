@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\simon\\source\\repos\\ExamPreparation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37E5B2B9-4C80-4DE0-AFE2-90F4BF57A9F2}|ExamPreparation\\ExamPreparation.csproj|c:\\users\\simon\\source\\repos\\exampreparation\\exampreparation\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E5B2B9-4C80-4DE0-AFE2-90F4BF57A9F2}|ExamPreparation\\ExamPreparation.csproj|solutionrelative:exampreparation\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E5B2B9-4C80-4DE0-AFE2-90F4BF57A9F2}|ExamPreparation\\ExamPreparation.csproj|c:\\users\\simon\\source\\repos\\exampreparation\\exampreparation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E5B2B9-4C80-4DE0-AFE2-90F4BF57A9F2}|ExamPreparation\\ExamPreparation.csproj|solutionrelative:exampreparation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\ExamPreparation\\ExamPreparation\\Car.cs",
+              "RelativeDocumentMoniker": "ExamPreparation\\Car.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\ExamPreparation\\ExamPreparation\\Car.cs",
+              "RelativeToolTip": "ExamPreparation\\Car.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAswCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T11:49:53.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\source\\repos\\ExamPreparation\\ExamPreparation\\Program.cs",
+              "RelativeDocumentMoniker": "ExamPreparation\\Program.cs",
+              "ToolTip": "C:\\Users\\simon\\source\\repos\\ExamPreparation\\ExamPreparation\\Program.cs",
+              "RelativeToolTip": "ExamPreparation\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T11:05:51.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
