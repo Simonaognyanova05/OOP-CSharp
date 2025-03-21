@@ -20,7 +20,7 @@ namespace CourseProject
 
         public override double CalculateArea()
         {
-            return 0.5 * BaseLength * Height;
+            return (BaseLength *  Height) / 2;
         }
 
         public override void Draw(Graphics g)
