@@ -39,6 +39,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DrawingForm";
             this.Text = "DrawingForm";
+            this.Load += new System.EventHandler(this.DrawingForm_Load);
             this.ResumeLayout(false);
 
         }
