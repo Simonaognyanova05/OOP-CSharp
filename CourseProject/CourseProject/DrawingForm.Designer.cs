@@ -29,13 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrawingForm));
+            this.btnColor = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
+            // 
+            // btnColor
+            // 
+            this.btnColor.Location = new System.Drawing.Point(129, 147);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(161, 50);
+            this.btnColor.TabIndex = 0;
+            this.btnColor.Text = "ColorButton";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 585);
+            this.Controls.Add(this.btnColor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DrawingForm";
             this.Text = "DrawingForm";
@@ -45,5 +58,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

@@ -13,10 +13,12 @@ namespace CourseProject
     public partial class DrawingForm : Form
     {
         private Shape shape;
-        private bool isDragging = false; 
+        private bool isDragging = false;
         private bool isResizing = false;
         private Point lastMousePosition;
         private const int HandleSize = 10;
+        private Color selectedColor = Color.Black;
+        private Button colorButton;
 
         public DrawingForm(Shape shape)
         {
@@ -29,6 +31,12 @@ namespace CourseProject
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
             this.MouseUp += DrawingForm_MouseUp;
+
+            colorButton = new Button();
+            colorButton.Text = "Избери цвят";
+            colorButton.Location = new Point(10, 10);
+            colorButton.Click += btnColor_Click;
+            this.Controls.Add(colorButton);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -37,8 +45,7 @@ namespace CourseProject
 
             if (shape != null)
             {
-                shape.Draw(e.Graphics);
-
+                shape.Draw(e.Graphics, selectedColor);
                 DrawResizeHandle(e.Graphics);
             }
         }
@@ -274,6 +281,18 @@ namespace CourseProject
                        Math.Abs(mousePosition.Y - handleY) <= HandleSize;
             }
             return false;
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                if (colorDialog.ShowDialog() == DialogResult.OK)
+                {
+                    selectedColor = colorDialog.Color;
+                    this.Invalidate();
+                }
+            }
         }
     }
 }
