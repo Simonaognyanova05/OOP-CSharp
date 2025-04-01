@@ -45,7 +45,7 @@ namespace CourseProject
 
             if (shape != null)
             {
-                shape.Draw(e.Graphics, selectedColor);
+                shape.Draw(e.Graphics);
                 DrawResizeHandle(e.Graphics);
             }
         }
