@@ -61,6 +61,8 @@ namespace CourseProject
             txtType.Text = "";
             txtA.Text = "";
             txtB.Text = "";
+            txtX.Text = "";
+            txtY.Text = "";
 
             lblA.Visible = false;
             lblB.Visible = false;
