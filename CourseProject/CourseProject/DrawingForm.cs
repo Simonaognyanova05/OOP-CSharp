@@ -17,7 +17,7 @@ namespace CourseProject
         private bool isResizing = false;
         private Point lastMousePosition;
         private const int HandleSize = 10;
-
+        private Color selectedColor = Color.Black; 
 
         public DrawingForm(Shape shape)
         {
@@ -30,6 +30,23 @@ namespace CourseProject
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
             this.MouseUp += DrawingForm_MouseUp;
+
+            Button btnColor = new Button { Text = "Choose Color", Dock = DockStyle.Top };
+            btnColor.Click += BtnColor_Click;
+            this.Controls.Add(btnColor);
+        }
+
+        private void BtnColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                if (colorDialog.ShowDialog() == DialogResult.OK)
+                {
+                    selectedColor = colorDialog.Color;
+                    shape.ShapeColor = selectedColor;
+                    this.Invalidate();
+                }
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -39,40 +56,42 @@ namespace CourseProject
             if (shape != null)
             {
                 shape.Draw(e.Graphics);
-
                 DrawResizeHandle(e.Graphics);
             }
         }
 
         private void DrawResizeHandle(Graphics g)
         {
-            if (shape is Circle circle)
+            using (Brush brush = new SolidBrush(Color.Red))
             {
-                g.FillRectangle(Brushes.Red,
-                    circle.X + circle.Radius - HandleSize / 2,
-                    circle.Y + circle.Radius - HandleSize / 2,
-                    HandleSize, HandleSize);
-            }
-            else if (shape is Rectangle rect)
-            {
-                g.FillRectangle(Brushes.Red,
-                    rect.X + rect.Width - HandleSize / 2,
-                    rect.Y + rect.Height - HandleSize / 2,
-                    HandleSize, HandleSize);
-            }
-            else if (shape is Square square)
-            {
-                g.FillRectangle(Brushes.Red,
-                    square.X + square.A - HandleSize / 2,
-                    square.Y + square.A - HandleSize / 2,
-                    HandleSize, HandleSize);
-            }
-            else if (shape is Triangle triangle)
-            {
-                g.FillRectangle(Brushes.Red,
-                    triangle.X + triangle.BaseLength / 2 - HandleSize / 2,
-                    triangle.Y - triangle.Height - HandleSize / 2,
-                    HandleSize, HandleSize);
+                if (shape is Circle circle)
+                {
+                    g.FillRectangle(brush,
+                        circle.X + circle.Radius - HandleSize / 2,
+                        circle.Y + circle.Radius - HandleSize / 2,
+                        HandleSize, HandleSize);
+                }
+                else if (shape is Rectangle rect)
+                {
+                    g.FillRectangle(brush,
+                        rect.X + rect.Width - HandleSize / 2,
+                        rect.Y + rect.Height - HandleSize / 2,
+                        HandleSize, HandleSize);
+                }
+                else if (shape is Square square)
+                {
+                    g.FillRectangle(brush,
+                        square.X + square.A - HandleSize / 2,
+                        square.Y + square.A - HandleSize / 2,
+                        HandleSize, HandleSize);
+                }
+                else if (shape is Triangle triangle)
+                {
+                    g.FillRectangle(brush,
+                        triangle.X + triangle.BaseLength / 2 - HandleSize / 2,
+                        triangle.Y - triangle.Height - HandleSize / 2,
+                        HandleSize, HandleSize);
+                }
             }
         }
 
@@ -94,14 +113,12 @@ namespace CourseProject
         {
             if (isResizing && shape != null)
             {
-                // Изчисляване на разликата в позициите
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
-                // Актуализиране на размера на фигурата
                 if (shape is Circle circle)
                 {
-                    circle.Radius += deltaX; // Увеличаваме радиуса
+                    circle.Radius += deltaX;
                 }
                 else if (shape is Rectangle rect)
                 {
@@ -110,7 +127,7 @@ namespace CourseProject
                 }
                 else if (shape is Square square)
                 {
-                    square.A += Math.Min(deltaX, deltaY); // Промяна на размера
+                    square.A += Math.Min(deltaX, deltaY);
                 }
                 else if (shape is Triangle triangle)
                 {
@@ -118,15 +135,11 @@ namespace CourseProject
                     triangle.Height += deltaY;
                 }
 
-                // Запомняме текущата позиция на мишката
                 lastMousePosition = e.Location;
-
-                // Прерисуване
                 this.Invalidate();
             }
             else if (isDragging && shape != null)
             {
-                // Логика за преместване на фигурата
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
@@ -134,12 +147,9 @@ namespace CourseProject
                 shape.Y += deltaY;
 
                 lastMousePosition = e.Location;
-
                 this.Invalidate();
             }
         }
-
-
 
         private void DrawingForm_MouseUp(object sender, MouseEventArgs e)
         {
@@ -149,7 +159,6 @@ namespace CourseProject
 
         private bool IsMouseOverShape(Point mousePosition)
         {
-
             if (shape is Circle circle)
             {
                 int dx = mousePosition.X - circle.X;
@@ -181,35 +190,26 @@ namespace CourseProject
         {
             if (shape is Circle circle)
             {
-                int handleX = circle.X + circle.Radius;
-                int handleY = circle.Y + circle.Radius;
-                return Math.Abs(mousePosition.X - handleX) <= HandleSize &&
-                       Math.Abs(mousePosition.Y - handleY) <= HandleSize;
+                return Math.Abs(mousePosition.X - (circle.X + circle.Radius)) <= HandleSize &&
+                       Math.Abs(mousePosition.Y - (circle.Y + circle.Radius)) <= HandleSize;
             }
             else if (shape is Rectangle rect)
             {
-                int handleX = rect.X + rect.Width;
-                int handleY = rect.Y + rect.Height;
-                return Math.Abs(mousePosition.X - handleX) <= HandleSize &&
-                       Math.Abs(mousePosition.Y - handleY) <= HandleSize;
+                return Math.Abs(mousePosition.X - (rect.X + rect.Width)) <= HandleSize &&
+                       Math.Abs(mousePosition.Y - (rect.Y + rect.Height)) <= HandleSize;
             }
             else if (shape is Square square)
             {
-                int handleX = square.X + square.A;
-                int handleY = square.Y + square.A;
-                return Math.Abs(mousePosition.X - handleX) <= HandleSize &&
-                       Math.Abs(mousePosition.Y - handleY) <= HandleSize;
+                return Math.Abs(mousePosition.X - (square.X + square.A)) <= HandleSize &&
+                       Math.Abs(mousePosition.Y - (square.Y + square.A)) <= HandleSize;
             }
             else if (shape is Triangle triangle)
             {
-                int handleX = triangle.X + triangle.BaseLength / 2;
-                int handleY = triangle.Y - triangle.Height;
-                return Math.Abs(mousePosition.X - handleX) <= HandleSize &&
-                       Math.Abs(mousePosition.Y - handleY) <= HandleSize;
+                return Math.Abs(mousePosition.X - (triangle.X + triangle.BaseLength / 2)) <= HandleSize &&
+                       Math.Abs(mousePosition.Y - (triangle.Y - triangle.Height)) <= HandleSize;
             }
             return false;
         }
-
 
         private void DrawingForm_Load(object sender, EventArgs e)
         {

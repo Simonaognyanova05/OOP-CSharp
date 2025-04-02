@@ -25,8 +25,14 @@ namespace CourseProject
 
         public override void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color, 2);
-            g.DrawRectangle(pen, X, Y, Width, Height);
+            using (Brush brush = new SolidBrush(ShapeColor))
+            {
+                g.FillRectangle(brush, X, Y, Width, Height);
+            }
+            using (Pen pen = new Pen(Color.Black, 2))
+            {
+                g.DrawRectangle(pen, X, Y, Width, Height);
+            }
         }
         public override string ToString()
         {

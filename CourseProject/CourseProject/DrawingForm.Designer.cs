@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrawingForm));
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // DrawingForm
@@ -45,5 +46,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

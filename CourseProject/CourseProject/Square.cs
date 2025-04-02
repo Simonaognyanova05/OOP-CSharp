@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,8 +24,14 @@ namespace CourseProject
 
         public override void Draw(Graphics g)
         {
-            Pen pen = new Pen(Color, 2);
-            g.DrawRectangle(pen, X, Y, A, A);
+            using (Brush brush = new SolidBrush(ShapeColor))
+            {
+                g.FillRectangle(brush, X, Y, A, A);
+            }
+            using (Pen pen = new Pen(Color.Black, 2))
+            {
+                g.DrawRectangle(pen, X, Y, A, A);
+            }
         }
         public override string ToString()
         {
