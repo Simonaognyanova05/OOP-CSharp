@@ -1,22 +1,11 @@
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.exe
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.AssemblyReference.cache
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.exe
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
-C:\Users\simon\OneDrive\Desktop\University - practice\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.DrawingForm.resources
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.AssemblyReference.cache
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.DrawingForm.resources
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.exe
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\obj\Debug\CourseProject.pdb
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.exe
-C:\Users\simon\Downloads\OOP-CSharp\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+C:\Users\simon\Downloads\CourseProject\CourseProject\bin\Debug\CourseProject.exe.config
+C:\Users\simon\Downloads\CourseProject\CourseProject\bin\Debug\CourseProject.exe
+C:\Users\simon\Downloads\CourseProject\CourseProject\bin\Debug\CourseProject.pdb
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.AssemblyReference.cache
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.DrawingForm.resources
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.MainForm.resources
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.Properties.Resources.resources
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.GenerateResource.cache
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.csproj.CoreCompileInputs.cache
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.exe
+C:\Users\simon\Downloads\CourseProject\CourseProject\obj\Debug\CourseProject.pdb

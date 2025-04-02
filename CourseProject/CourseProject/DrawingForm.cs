@@ -17,8 +17,7 @@ namespace CourseProject
         private bool isResizing = false;
         private Point lastMousePosition;
         private const int HandleSize = 10;
-        private Color selectedColor = Color.Black;
-        private Button colorButton;
+
 
         public DrawingForm(Shape shape)
         {
@@ -31,12 +30,6 @@ namespace CourseProject
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
             this.MouseUp += DrawingForm_MouseUp;
-
-            colorButton = new Button();
-            colorButton.Text = "Избери цвят";
-            colorButton.Location = new Point(10, 10);
-            colorButton.Click += btnColor_Click;
-            this.Controls.Add(colorButton);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -46,6 +39,7 @@ namespace CourseProject
             if (shape != null)
             {
                 shape.Draw(e.Graphics);
+
                 DrawResizeHandle(e.Graphics);
             }
         }
@@ -82,9 +76,6 @@ namespace CourseProject
             }
         }
 
-        private void DrawingForm_Load(object sender, EventArgs e)
-        {
-        }
         private void DrawingForm_MouseDown(object sender, MouseEventArgs e)
         {
             if (IsMouseOverResizeHandle(e.Location))
@@ -98,121 +89,57 @@ namespace CourseProject
                 lastMousePosition = e.Location;
             }
         }
+
         private void DrawingForm_MouseMove(object sender, MouseEventArgs e)
         {
             if (isResizing && shape != null)
             {
+                // Изчисляване на разликата в позициите
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
+                // Актуализиране на размера на фигурата
                 if (shape is Circle circle)
                 {
-                    int newRadius = circle.Radius + deltaX;
-
-                    if (circle.X - newRadius >= 0 && circle.X + newRadius <= this.ClientSize.Width &&
-                        circle.Y - newRadius >= 0 && circle.Y + newRadius <= this.ClientSize.Height)
-                    {
-                        circle.Radius = newRadius;
-                    }
+                    circle.Radius += deltaX; // Увеличаваме радиуса
                 }
                 else if (shape is Rectangle rect)
                 {
-                    int newWidth = rect.Width + deltaX;
-                    int newHeight = rect.Height + deltaY;
-
-                    if (rect.X + newWidth <= this.ClientSize.Width && rect.Y + newHeight <= this.ClientSize.Height)
-                    {
-                        rect.Width = newWidth > 0 ? newWidth : rect.Width;
-                        rect.Height = newHeight > 0 ? newHeight : rect.Height;
-                    }
+                    rect.Width += deltaX;
+                    rect.Height += deltaY;
                 }
                 else if (shape is Square square)
                 {
-                    int newSize = square.A + Math.Min(deltaX, deltaY);
-
-                    if (square.X + newSize <= this.ClientSize.Width && square.Y + newSize <= this.ClientSize.Height)
-                    {
-                        square.A = newSize > 0 ? newSize : square.A;
-                    }
+                    square.A += Math.Min(deltaX, deltaY); // Промяна на размера
                 }
                 else if (shape is Triangle triangle)
                 {
-                    int newBaseLength = triangle.BaseLength + deltaX;
-                    int newHeight = triangle.Height + deltaY;
-
-                    if (triangle.X + newBaseLength / 2 <= this.ClientSize.Width &&
-                        triangle.X - newBaseLength / 2 >= 0 &&
-                        triangle.Y - newHeight >= 0)
-                    {
-                        triangle.BaseLength = newBaseLength > 0 ? newBaseLength : triangle.BaseLength;
-                        triangle.Height = newHeight > 0 ? newHeight : triangle.Height;
-                    }
+                    triangle.BaseLength += deltaX;
+                    triangle.Height += deltaY;
                 }
 
+                // Запомняме текущата позиция на мишката
                 lastMousePosition = e.Location;
 
+                // Прерисуване
                 this.Invalidate();
             }
             else if (isDragging && shape != null)
             {
+                // Логика за преместване на фигурата
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
-                if (shape is Circle circle)
-                {
-                    int newX = circle.X + deltaX;
-                    int newY = circle.Y + deltaY;
-
-                    if (newX - circle.Radius >= 0 && newX + circle.Radius <= this.ClientSize.Width &&
-                        newY - circle.Radius >= 0 && newY + circle.Radius <= this.ClientSize.Height)
-                    {
-                        circle.X = newX;
-                        circle.Y = newY;
-                    }
-                }
-                else if (shape is Rectangle rect)
-                {
-                    int newX = rect.X + deltaX;
-                    int newY = rect.Y + deltaY;
-
-                    if (newX >= 0 && newX + rect.Width <= this.ClientSize.Width &&
-                        newY >= 0 && newY + rect.Height <= this.ClientSize.Height)
-                    {
-                        rect.X = newX;
-                        rect.Y = newY;
-                    }
-                }
-                else if (shape is Square square)
-                {
-                    int newX = square.X + deltaX;
-                    int newY = square.Y + deltaY;
-
-                    if (newX >= 0 && newX + square.A <= this.ClientSize.Width &&
-                        newY >= 0 && newY + square.A <= this.ClientSize.Height)
-                    {
-                        square.X = newX;
-                        square.Y = newY;
-                    }
-                }
-                else if (shape is Triangle triangle)
-                {
-                    int newX = triangle.X + deltaX;
-                    int newY = triangle.Y + deltaY;
-
-                    if (newX + triangle.BaseLength / 2 <= this.ClientSize.Width &&
-                        newX - triangle.BaseLength / 2 >= 0 &&
-                        newY >= triangle.Height)
-                    {
-                        triangle.X = newX;
-                        triangle.Y = newY;
-                    }
-                }
+                shape.X += deltaX;
+                shape.Y += deltaY;
 
                 lastMousePosition = e.Location;
 
                 this.Invalidate();
             }
         }
+
+
 
         private void DrawingForm_MouseUp(object sender, MouseEventArgs e)
         {
@@ -283,16 +210,10 @@ namespace CourseProject
             return false;
         }
 
-        private void btnColor_Click(object sender, EventArgs e)
+
+        private void DrawingForm_Load(object sender, EventArgs e)
         {
-            using (ColorDialog colorDialog = new ColorDialog())
-            {
-                if (colorDialog.ShowDialog() == DialogResult.OK)
-                {
-                    selectedColor = colorDialog.Color;
-                    this.Invalidate();
-                }
-            }
+
         }
     }
 }
