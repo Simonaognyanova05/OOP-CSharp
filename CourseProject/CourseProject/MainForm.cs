@@ -87,6 +87,8 @@ namespace CourseProject
             switch (type)
             {
                 case "Rectangle":
+                    lblA.Text = "Enter a value for A: ";
+                    lblB.Text = "Enter a value for B: ";
                     lblA.Visible = true;
                     lblB.Visible = true;
                     txtA.Visible = true;
@@ -98,7 +100,10 @@ namespace CourseProject
                     txtY.Visible = true;
                     break;
                 case "Square":
+                    lblA.Text = "Enter a value for A: ";
                     txtA.Visible = true;
+                    txtB.Visible = false;
+                    lblB.Visible = false;
                     lblA.Visible = true;
                     btnAdd.Visible = true;
                     lblX.Visible = true;
@@ -109,6 +114,7 @@ namespace CourseProject
                 case "Triangle":
                     txtA.Visible = true;
                     lblA.Visible = true;
+                    lblA.Text = "Enter a value for A: ";
                     txtB.Visible = true;
                     lblB.Visible = true;
                     lblB.Text = "Enter a value for H: ";
@@ -119,9 +125,11 @@ namespace CourseProject
                     txtY.Visible = true;
                     break;
                 case "Circle":
-                    txtA.Visible = true;
-                    lblA.Visible = true;
                     lblA.Text = "Enter a value for R: ";
+                    txtA.Visible = true;
+                    txtB.Visible = false;
+                    lblB.Visible = false;
+                    lblA.Visible = true;
                     btnAdd.Visible = true;
                     lblX.Visible = true;
                     lblY.Visible = true;
