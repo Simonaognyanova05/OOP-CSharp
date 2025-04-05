@@ -32,11 +32,12 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.btnFillColor = new System.Windows.Forms.Button();
             this.btnBorderColor = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFillColor
             // 
-            this.btnFillColor.Location = new System.Drawing.Point(717, 135);
+            this.btnFillColor.Location = new System.Drawing.Point(717, 89);
             this.btnFillColor.Name = "btnFillColor";
             this.btnFillColor.Size = new System.Drawing.Size(213, 53);
             this.btnFillColor.TabIndex = 0;
@@ -54,11 +55,22 @@
             this.btnBorderColor.UseVisualStyleBackColor = true;
             this.btnBorderColor.Click += new System.EventHandler(this.btnBorderColor_Click);
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(717, 148);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(213, 53);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "btnDelete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 585);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBorderColor);
             this.Controls.Add(this.btnFillColor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -74,5 +86,6 @@
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button btnFillColor;
         private System.Windows.Forms.Button btnBorderColor;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

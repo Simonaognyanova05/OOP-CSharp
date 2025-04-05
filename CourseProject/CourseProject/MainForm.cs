@@ -146,14 +146,19 @@ namespace CourseProject
 
         private void btnDraw_Click(object sender, EventArgs e)
         {
-            selectedShape = lstFigures.SelectedIndex >= 0 ? shapes[lstFigures.SelectedIndex] : null;
-
-            if (selectedShape == null)
+            if (lstFigures.SelectedIndex < 0)
             {
                 MessageBox.Show("Please select a shape to draw!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            DrawingForm drawForm = new DrawingForm(selectedShape);
+
+            List<Shape> selectedShapes = new List<Shape>();
+            foreach (var item in lstFigures.SelectedItems)
+            {
+                selectedShapes.Add(item as Shape);
+            }
+
+            DrawingForm drawForm = new DrawingForm(selectedShapes);  // Сега преминаваме списък с фигури
             drawForm.Show();
         }
 
@@ -165,9 +170,16 @@ namespace CourseProject
         private void btnDelete_Click(object sender, EventArgs e)
         {
             int selectedIndex = lstFigures.SelectedIndex;
-            shapes.RemoveAt(selectedIndex); 
-            lstFigures.Items.RemoveAt(selectedIndex);
-            MessageBox.Show("The figure was deleted successfully!");
+            if (selectedIndex >= 0)
+            {
+                shapes.RemoveAt(selectedIndex);
+                lstFigures.Items.RemoveAt(selectedIndex);
+                MessageBox.Show("The figure was deleted successfully!");
+            }
+            else
+            {
+                MessageBox.Show("Please select a figure to delete!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

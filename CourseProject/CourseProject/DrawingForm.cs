@@ -12,19 +12,21 @@ namespace CourseProject
 {
     public partial class DrawingForm : Form
     {
-        private Shape shape;
+        private List<Shape> shapes;
+        private Shape selectedShape;
         private bool isDragging = false;
         private bool isResizing = false;
         private Point lastMousePosition;
         private const int HandleSize = 10;
 
-        public DrawingForm(Shape shape)
+        public DrawingForm(List<Shape> shapes)
         {
             InitializeComponent();
-            this.shape = shape;
+            this.shapes = shapes; 
             this.Text = "Draw Shape";
             this.BackColor = Color.White;
             this.Size = new Size(500, 500);
+            this.btnDelete.Click += new EventHandler(this.btnDelete_Click);
 
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
@@ -34,31 +36,35 @@ namespace CourseProject
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-
-            if (shape != null)
+            foreach (var shape in shapes)
             {
                 shape.Draw(e.Graphics);
+            }
+
+            if (selectedShape != null)
+            {
                 DrawResizeHandle(e.Graphics);
             }
         }
+
 
         private void DrawResizeHandle(Graphics g)
         {
             using (Brush brush = new SolidBrush(Color.Red))
             {
-                if (shape is Circle circle)
+                if (selectedShape is Circle circle)
                 {
                     g.FillRectangle(brush, circle.X + circle.Radius - HandleSize / 2, circle.Y + circle.Radius - HandleSize / 2, HandleSize, HandleSize);
                 }
-                else if (shape is Rectangle rect)
+                else if (selectedShape is Rectangle rect)
                 {
                     g.FillRectangle(brush, rect.X + rect.Width - HandleSize / 2, rect.Y + rect.Height - HandleSize / 2, HandleSize, HandleSize);
                 }
-                else if (shape is Square square)
+                else if (selectedShape is Square square)
                 {
                     g.FillRectangle(brush, square.X + square.A - HandleSize / 2, square.Y + square.A - HandleSize / 2, HandleSize, HandleSize);
                 }
-                else if (shape is Triangle triangle)
+                else if (selectedShape is Triangle triangle)
                 {
                     g.FillRectangle(brush, triangle.X + triangle.BaseLength / 2 - HandleSize / 2, triangle.Y - triangle.Height - HandleSize / 2, HandleSize, HandleSize);
                 }
@@ -67,39 +73,50 @@ namespace CourseProject
 
         private void DrawingForm_MouseDown(object sender, MouseEventArgs e)
         {
-            if (IsMouseOverResizeHandle(e.Location))
+            selectedShape = null;
+
+            foreach (var shape in shapes)
+            {
+                if (IsMouseOverShape(e.Location, shape))
+                {
+                    selectedShape = shape;
+                    break;
+                }
+            }
+
+            if (selectedShape != null && IsMouseOverResizeHandle(e.Location))
             {
                 isResizing = true;
-                lastMousePosition = e.Location;
             }
-            else if (IsMouseOverShape(e.Location))
+            else if (selectedShape != null)
             {
                 isDragging = true;
-                lastMousePosition = e.Location;
             }
+
+            lastMousePosition = e.Location;
         }
 
         private void DrawingForm_MouseMove(object sender, MouseEventArgs e)
         {
-            if (isResizing && shape != null)
+            if (isResizing && selectedShape != null)
             {
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
-                if (shape is Circle circle)
+                if (selectedShape is Circle circle)
                 {
                     circle.Radius += deltaX;
                 }
-                else if (shape is Rectangle rect)
+                else if (selectedShape is Rectangle rect)
                 {
                     rect.Width += deltaX;
                     rect.Height += deltaY;
                 }
-                else if (shape is Square square)
+                else if (selectedShape is Square square)
                 {
                     square.A += Math.Min(deltaX, deltaY);
                 }
-                else if (shape is Triangle triangle)
+                else if (selectedShape is Triangle triangle)
                 {
                     triangle.BaseLength += deltaX;
                     triangle.Height += deltaY;
@@ -108,13 +125,13 @@ namespace CourseProject
                 lastMousePosition = e.Location;
                 this.Invalidate();
             }
-            else if (isDragging && shape != null)
+            else if (isDragging && selectedShape != null)
             {
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
-                shape.X += deltaX;
-                shape.Y += deltaY;
+                selectedShape.X += deltaX;
+                selectedShape.Y += deltaY;
 
                 lastMousePosition = e.Location;
                 this.Invalidate();
@@ -127,7 +144,7 @@ namespace CourseProject
             isResizing = false;
         }
 
-        private bool IsMouseOverShape(Point mousePosition)
+        private bool IsMouseOverShape(Point mousePosition, Shape shape)
         {
             if (shape is Circle circle)
             {
@@ -158,22 +175,22 @@ namespace CourseProject
 
         private bool IsMouseOverResizeHandle(Point mousePosition)
         {
-            if (shape is Circle circle)
+            if (selectedShape is Circle circle)
             {
                 return Math.Abs(mousePosition.X - (circle.X + circle.Radius)) <= HandleSize &&
                        Math.Abs(mousePosition.Y - (circle.Y + circle.Radius)) <= HandleSize;
             }
-            else if (shape is Rectangle rect)
+            else if (selectedShape is Rectangle rect)
             {
                 return Math.Abs(mousePosition.X - (rect.X + rect.Width)) <= HandleSize &&
                        Math.Abs(mousePosition.Y - (rect.Y + rect.Height)) <= HandleSize;
             }
-            else if (shape is Square square)
+            else if (selectedShape is Square square)
             {
                 return Math.Abs(mousePosition.X - (square.X + square.A)) <= HandleSize &&
                        Math.Abs(mousePosition.Y - (square.Y + square.A)) <= HandleSize;
             }
-            else if (shape is Triangle triangle)
+            else if (selectedShape is Triangle triangle)
             {
                 return Math.Abs(mousePosition.X - (triangle.X + triangle.BaseLength / 2)) <= HandleSize &&
                        Math.Abs(mousePosition.Y - (triangle.Y - triangle.Height)) <= HandleSize;
@@ -190,9 +207,9 @@ namespace CourseProject
         {
             using (ColorDialog colorDialog = new ColorDialog())
             {
-                if (colorDialog.ShowDialog() == DialogResult.OK && shape != null)
+                if (colorDialog.ShowDialog() == DialogResult.OK && selectedShape != null)
                 {
-                    shape.FillColor = colorDialog.Color;
+                    selectedShape.FillColor = colorDialog.Color;
                     this.Invalidate();
                 }
             }
@@ -202,11 +219,26 @@ namespace CourseProject
         {
             using (ColorDialog colorDialog = new ColorDialog())
             {
-                if (colorDialog.ShowDialog() == DialogResult.OK && shape != null)
+                if (colorDialog.ShowDialog() == DialogResult.OK && selectedShape != null)
                 {
-                    shape.BorderColor = colorDialog.Color;
+                    selectedShape.BorderColor = colorDialog.Color;
                     this.Invalidate();
                 }
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (selectedShape != null)
+            {
+                shapes.Remove(selectedShape);
+                selectedShape = null; 
+                MessageBox.Show("Shape has been deleted.");
+                this.Invalidate(); 
+            }
+            else
+            {
+                MessageBox.Show("No shape selected to delete.");
             }
         }
     }
