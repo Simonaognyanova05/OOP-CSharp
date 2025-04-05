@@ -17,7 +17,6 @@ namespace CourseProject
         private bool isResizing = false;
         private Point lastMousePosition;
         private const int HandleSize = 10;
-        private Color selectedColor = Color.Black; 
 
         public DrawingForm(Shape shape)
         {
@@ -30,23 +29,6 @@ namespace CourseProject
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
             this.MouseUp += DrawingForm_MouseUp;
-
-            Button btnColor = new Button { Text = "Choose Color", Dock = DockStyle.Top };
-            btnColor.Click += BtnColor_Click;
-            this.Controls.Add(btnColor);
-        }
-
-        private void BtnColor_Click(object sender, EventArgs e)
-        {
-            using (ColorDialog colorDialog = new ColorDialog())
-            {
-                if (colorDialog.ShowDialog() == DialogResult.OK)
-                {
-                    selectedColor = colorDialog.Color;
-                    shape.ShapeColor = selectedColor;
-                    this.Invalidate();
-                }
-            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -66,31 +48,19 @@ namespace CourseProject
             {
                 if (shape is Circle circle)
                 {
-                    g.FillRectangle(brush,
-                        circle.X + circle.Radius - HandleSize / 2,
-                        circle.Y + circle.Radius - HandleSize / 2,
-                        HandleSize, HandleSize);
+                    g.FillRectangle(brush, circle.X + circle.Radius - HandleSize / 2, circle.Y + circle.Radius - HandleSize / 2, HandleSize, HandleSize);
                 }
                 else if (shape is Rectangle rect)
                 {
-                    g.FillRectangle(brush,
-                        rect.X + rect.Width - HandleSize / 2,
-                        rect.Y + rect.Height - HandleSize / 2,
-                        HandleSize, HandleSize);
+                    g.FillRectangle(brush, rect.X + rect.Width - HandleSize / 2, rect.Y + rect.Height - HandleSize / 2, HandleSize, HandleSize);
                 }
                 else if (shape is Square square)
                 {
-                    g.FillRectangle(brush,
-                        square.X + square.A - HandleSize / 2,
-                        square.Y + square.A - HandleSize / 2,
-                        HandleSize, HandleSize);
+                    g.FillRectangle(brush, square.X + square.A - HandleSize / 2, square.Y + square.A - HandleSize / 2, HandleSize, HandleSize);
                 }
                 else if (shape is Triangle triangle)
                 {
-                    g.FillRectangle(brush,
-                        triangle.X + triangle.BaseLength / 2 - HandleSize / 2,
-                        triangle.Y - triangle.Height - HandleSize / 2,
-                        HandleSize, HandleSize);
+                    g.FillRectangle(brush, triangle.X + triangle.BaseLength / 2 - HandleSize / 2, triangle.Y - triangle.Height - HandleSize / 2, HandleSize, HandleSize);
                 }
             }
         }
@@ -214,6 +184,30 @@ namespace CourseProject
         private void DrawingForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFillColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                if (colorDialog.ShowDialog() == DialogResult.OK && shape != null)
+                {
+                    shape.FillColor = colorDialog.Color;
+                    this.Invalidate();
+                }
+            }
+        }
+
+        private void btnBorderColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog colorDialog = new ColorDialog())
+            {
+                if (colorDialog.ShowDialog() == DialogResult.OK && shape != null)
+                {
+                    shape.BorderColor = colorDialog.Color;
+                    this.Invalidate();
+                }
+            }
         }
     }
 }

@@ -23,13 +23,12 @@ namespace CourseProject
 
         public override void Draw(Graphics g)
         {
-            using (Brush brush = new SolidBrush(ShapeColor))
+            int diameter = Radius * 2;
+            using (Brush brush = new SolidBrush(FillColor))
+            using (Pen pen = new Pen(BorderColor, 2))
             {
-                g.FillEllipse(brush, X - Radius, Y - Radius, Radius * 2, Radius * 2);
-            }
-            using (Pen pen = new Pen(Color.Black, 2))
-            {
-                g.DrawEllipse(pen, X - Radius, Y - Radius, Radius * 2, Radius * 2);
+                g.FillEllipse(brush, X - Radius, Y - Radius, diameter, diameter);
+                g.DrawEllipse(pen, X - Radius, Y - Radius, diameter, diameter);
             }
         }
         public override string ToString()

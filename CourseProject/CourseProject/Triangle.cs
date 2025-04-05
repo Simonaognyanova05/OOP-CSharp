@@ -25,20 +25,15 @@ namespace CourseProject
 
         public override void Draw(Graphics g)
         {
-            Point[] points = new Point[]
-            {
-            new Point(X, Y - Height), 
-            new Point(X - BaseLength / 2, Y), 
-            new Point(X + BaseLength / 2, Y) 
-            };
+            Point p1 = new Point(X, Y - Height);                         // Връх
+            Point p2 = new Point(X - BaseLength / 2, Y);                // Ляво
+            Point p3 = new Point(X + BaseLength / 2, Y);                // Дясно
 
-            using (Brush brush = new SolidBrush(ShapeColor))
+            using (Brush brush = new SolidBrush(FillColor))
+            using (Pen pen = new Pen(BorderColor, 2))
             {
-                g.FillPolygon(brush, points);
-            }
-            using (Pen pen = new Pen(Color.Black, 2))
-            {
-                g.DrawPolygon(pen, points);
+                g.FillPolygon(brush, new Point[] { p1, p2, p3 });
+                g.DrawPolygon(pen, new Point[] { p1, p2, p3 });
             }
         }
 
