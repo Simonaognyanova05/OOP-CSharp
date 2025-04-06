@@ -31,6 +31,14 @@ namespace CourseProject
             return p.X >= X && p.X <= X + A &&
                    p.Y >= Y && p.Y <= Y + A;
         }
+        public override Shape Clone()
+        {
+            return new Square(X, Y, A)
+            {
+                FillColor = this.FillColor,
+                BorderColor = this.BorderColor
+            };
+        }
 
         public override string ToString()
         {

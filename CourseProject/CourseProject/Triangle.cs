@@ -21,9 +21,9 @@ namespace CourseProject
 
         public override void Draw(Graphics g)
         {
-            Point p1 = new Point(X, Y - Height);                          
-            Point p2 = new Point(X - BaseLength / 2, Y);                
-            Point p3 = new Point(X + BaseLength / 2, Y);               
+            Point p1 = new Point(X, Y - Height);
+            Point p2 = new Point(X - BaseLength / 2, Y);
+            Point p3 = new Point(X + BaseLength / 2, Y);
 
             using (Brush brush = new SolidBrush(FillColor))
             using (Pen pen = new Pen(BorderColor, 2))
@@ -50,6 +50,15 @@ namespace CourseProject
             float A3 = Area(p1, p2, p);
 
             return Math.Abs(A - (A1 + A2 + A3)) < 0.5f;
+        }
+
+        public override Shape Clone()
+        {
+            return new Triangle(X, Y, BaseLength, Height)
+            {
+                FillColor = this.FillColor,
+                BorderColor = this.BorderColor
+            };
         }
 
         public override string ToString()

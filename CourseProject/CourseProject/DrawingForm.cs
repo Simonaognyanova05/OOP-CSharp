@@ -26,7 +26,6 @@ namespace CourseProject
         private Stack<List<Shape>> undoStack = new Stack<List<Shape>>();
         private Stack<List<Shape>> redoStack = new Stack<List<Shape>>();
 
-
         public DrawingForm(List<Shape> shapes)
         {
             InitializeComponent();
@@ -48,7 +47,7 @@ namespace CourseProject
                 {
                     Undo();
                 }
-                if (e.Control && e.KeyCode == Keys.Y) 
+                if (e.Control && e.KeyCode == Keys.Y)
                 {
                     Redo();
                 }
@@ -69,7 +68,6 @@ namespace CourseProject
                 DrawResizeHandle(e.Graphics);
             }
         }
-
 
         private void DrawResizeHandle(Graphics g)
         {
@@ -123,10 +121,10 @@ namespace CourseProject
                     PushToUndoStack();
                     shapes.Add(newShape);
                     selectedShape = newShape;
-                    Invalidate(); 
+                    Invalidate();
                 }
 
-                return; 
+                return;
             }
 
             selectedShape = null;
@@ -151,8 +149,6 @@ namespace CourseProject
 
             lastMousePosition = e.Location;
         }
-
-
 
         private void DrawingForm_MouseMove(object sender, MouseEventArgs e)
         {
@@ -243,31 +239,7 @@ namespace CourseProject
 
         private bool IsMouseOverShape(Point mousePosition, Shape shape)
         {
-            if (shape is Circle circle)
-            {
-                int dx = mousePosition.X - circle.X;
-                int dy = mousePosition.Y - circle.Y;
-                return dx * dx + dy * dy <= circle.Radius * circle.Radius;
-            }
-            else if (shape is Rectangle rect)
-            {
-                return mousePosition.X >= rect.X && mousePosition.X <= rect.X + rect.Width &&
-                       mousePosition.Y >= rect.Y && mousePosition.Y <= rect.Y + rect.Height;
-            }
-            else if (shape is Square square)
-            {
-                return mousePosition.X >= square.X && mousePosition.X <= square.X + square.A &&
-                       mousePosition.Y >= square.Y && mousePosition.Y <= square.Y + square.A;
-            }
-            else if (shape is Triangle triangle)
-            {
-                int baseX = triangle.X;
-                int baseY = triangle.Y;
-                return mousePosition.Y <= baseY && mousePosition.Y >= baseY - triangle.Height &&
-                       mousePosition.X >= baseX - triangle.BaseLength / 2 &&
-                       mousePosition.X <= baseX + triangle.BaseLength / 2;
-            }
-            return false;
+            return shape.Contains(mousePosition);
         }
 
         private bool IsMouseOverResizeHandle(Point mousePosition)
@@ -297,15 +269,15 @@ namespace CourseProject
 
         private void PushToUndoStack()
         {
-            undoStack.Push(new List<Shape>(shapes));
-            redoStack.Clear(); 
+            undoStack.Push(shapes.Select(s => s.Clone()).ToList());
+            redoStack.Clear();
         }
 
         private void Undo()
         {
             if (undoStack.Count > 0)
             {
-                redoStack.Push(new List<Shape>(shapes));
+                redoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = undoStack.Pop();
                 this.Invalidate();
             }
@@ -315,17 +287,13 @@ namespace CourseProject
         {
             if (redoStack.Count > 0)
             {
-                undoStack.Push(new List<Shape>(shapes));
+                undoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = redoStack.Pop();
                 this.Invalidate();
             }
         }
 
-
-        private void DrawingForm_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void DrawingForm_Load(object sender, EventArgs e) { }
 
         private void btnFillColor_Click(object sender, EventArgs e)
         {
@@ -333,6 +301,7 @@ namespace CourseProject
             {
                 if (colorDialog.ShowDialog() == DialogResult.OK && selectedShape != null)
                 {
+                    PushToUndoStack();
                     selectedShape.FillColor = colorDialog.Color;
                     this.Invalidate();
                 }
@@ -345,6 +314,7 @@ namespace CourseProject
             {
                 if (colorDialog.ShowDialog() == DialogResult.OK && selectedShape != null)
                 {
+                    PushToUndoStack();
                     selectedShape.BorderColor = colorDialog.Color;
                     this.Invalidate();
                 }

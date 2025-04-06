@@ -34,6 +34,15 @@ namespace CourseProject
             int dy = p.Y - Y;
             return dx * dx + dy * dy <= Radius * Radius;
         }
+        public override Shape Clone()
+        {
+            return new Circle(X, Y, Radius)
+            {
+                FillColor = this.FillColor,
+                BorderColor = this.BorderColor
+            };
+        }
+
 
         public override string ToString()
         {

@@ -3,32 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\square.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\rectangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\shape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\circle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\drawingform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|c:\\users\\simon\\onedrive\\desktop\\university - practice\\oop-csharp\\courseproject\\courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C39BAAA-028C-4AD0-B8F0-70EED7473282}|CourseProject\\CourseProject.csproj|solutionrelative:courseproject\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +42,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrawingForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
+              "RelativeDocumentMoniker": "CourseProject\\DrawingForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
+              "RelativeToolTip": "CourseProject\\DrawingForm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAApwBkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T14:27:10.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shape.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
+              "RelativeDocumentMoniker": "CourseProject\\Shape.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
+              "RelativeToolTip": "CourseProject\\Shape.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T14:56:52.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Square.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Square.cs",
+              "RelativeDocumentMoniker": "CourseProject\\Square.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Square.cs",
+              "RelativeToolTip": "CourseProject\\Square.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T14:56:58.489Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -48,19 +91,20 @@
               "RelativeDocumentMoniker": "CourseProject\\Rectangle.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Rectangle.cs",
               "RelativeToolTip": "CourseProject\\Rectangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:56:45.319Z"
+              "WhenOpened": "2025-04-06T14:56:45.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Circle.cs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Circle.cs",
               "RelativeDocumentMoniker": "CourseProject\\Circle.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Circle.cs",
               "RelativeToolTip": "CourseProject\\Circle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T14:56:37.639Z",
               "EditorCaption": ""
@@ -68,51 +112,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DrawingForm.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
-              "RelativeDocumentMoniker": "CourseProject\\DrawingForm.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\DrawingForm.cs",
-              "RelativeToolTip": "CourseProject\\DrawingForm.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:27:10.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Shape.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
-              "RelativeDocumentMoniker": "CourseProject\\Shape.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Shape.cs",
-              "RelativeToolTip": "CourseProject\\Shape.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:56:52.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Square.cs",
-              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Square.cs",
-              "RelativeDocumentMoniker": "CourseProject\\Square.cs",
-              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Square.cs",
-              "RelativeToolTip": "CourseProject\\Square.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:56:58.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Triangle.cs",
               "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Triangle.cs",
               "RelativeDocumentMoniker": "CourseProject\\Triangle.cs",
               "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\Triangle.cs",
               "RelativeToolTip": "CourseProject\\Triangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:57:05.263Z"
+              "WhenOpened": "2025-04-06T14:57:05.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -125,6 +133,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T14:48:40.873Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\MainForm.cs",
+              "RelativeDocumentMoniker": "CourseProject\\MainForm.cs",
+              "ToolTip": "C:\\Users\\simon\\OneDrive\\Desktop\\University - practice\\OOP-CSharp\\CourseProject\\CourseProject\\MainForm.cs",
+              "RelativeToolTip": "CourseProject\\MainForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAApwA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:00:24.778Z",
+              "EditorCaption": ""
             }
           ]
         }

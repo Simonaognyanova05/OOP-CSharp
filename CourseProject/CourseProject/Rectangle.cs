@@ -33,6 +33,14 @@ namespace CourseProject
             return p.X >= X && p.X <= X + Width &&
                    p.Y >= Y && p.Y <= Y + Height;
         }
+        public override Shape Clone()
+        {
+            return new Rectangle(X, Y, Width, Height)
+            {
+                FillColor = this.FillColor,
+                BorderColor = this.BorderColor
+            };
+        }
 
         public override string ToString()
         {
