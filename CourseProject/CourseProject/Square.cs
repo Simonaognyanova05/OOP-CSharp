@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace CourseProject
 {
@@ -31,6 +25,13 @@ namespace CourseProject
                 g.DrawRectangle(pen, X, Y, A, A);
             }
         }
+
+        public override bool Contains(Point p)
+        {
+            return p.X >= X && p.X <= X + A &&
+                   p.Y >= Y && p.Y <= Y + A;
+        }
+
         public override string ToString()
         {
             return $"Square: Side = {A}";

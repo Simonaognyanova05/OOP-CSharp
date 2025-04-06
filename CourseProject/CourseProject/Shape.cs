@@ -15,6 +15,7 @@ public abstract class Shape
 
     public abstract double CalculateArea();
     public abstract void Draw(Graphics g);
+    public abstract bool Contains(Point p);
 
     public override string ToString()
     {

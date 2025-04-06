@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Drawing;
 
 namespace CourseProject
 {
@@ -32,6 +27,13 @@ namespace CourseProject
                 g.DrawRectangle(pen, X, Y, Width, Height);
             }
         }
+
+        public override bool Contains(Point p)
+        {
+            return p.X >= X && p.X <= X + Width &&
+                   p.Y >= Y && p.Y <= Y + Height;
+        }
+
         public override string ToString()
         {
             return $"Rectangle: Width = {Width}; Height = {Height}";

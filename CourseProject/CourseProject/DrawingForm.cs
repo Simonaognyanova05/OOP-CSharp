@@ -23,6 +23,10 @@ namespace CourseProject
         private bool drawingMode = false;
         private Point drawStartPoint;
 
+        private Stack<List<Shape>> undoStack = new Stack<List<Shape>>();
+        private Stack<List<Shape>> redoStack = new Stack<List<Shape>>();
+
+
         public DrawingForm(List<Shape> shapes)
         {
             InitializeComponent();
@@ -37,7 +41,18 @@ namespace CourseProject
             this.MouseUp += DrawingForm_MouseUp;
 
             this.KeyPreview = true;
-            this.KeyDown += (s, e) => { if (e.Shift) drawingMode = true; };
+            this.KeyDown += (s, e) =>
+            {
+                if (e.Shift) drawingMode = true;
+                if (e.Control && e.KeyCode == Keys.Z)
+                {
+                    Undo();
+                }
+                if (e.Control && e.KeyCode == Keys.Y) 
+                {
+                    Redo();
+                }
+            };
             this.KeyUp += (s, e) => { drawingMode = false; };
         }
 
@@ -83,7 +98,6 @@ namespace CourseProject
         {
             if (ModifierKeys == Keys.Shift)
             {
-                // Рисуване на нова фигура според избора в ComboBox
                 string selectedType = comboBoxShapes.SelectedItem?.ToString();
 
                 Shape newShape = null;
@@ -106,12 +120,13 @@ namespace CourseProject
 
                 if (newShape != null)
                 {
+                    PushToUndoStack();
                     shapes.Add(newShape);
                     selectedShape = newShape;
-                    Invalidate(); // Прерисуване
+                    Invalidate(); 
                 }
 
-                return; // Не продължаваме с избиране или преместване
+                return; 
             }
 
             selectedShape = null;
@@ -214,6 +229,7 @@ namespace CourseProject
 
                 if (newShape != null)
                 {
+                    PushToUndoStack();
                     shapes.Add(newShape);
                     this.Invalidate();
                 }
@@ -279,6 +295,33 @@ namespace CourseProject
             return false;
         }
 
+        private void PushToUndoStack()
+        {
+            undoStack.Push(new List<Shape>(shapes));
+            redoStack.Clear(); 
+        }
+
+        private void Undo()
+        {
+            if (undoStack.Count > 0)
+            {
+                redoStack.Push(new List<Shape>(shapes));
+                shapes = undoStack.Pop();
+                this.Invalidate();
+            }
+        }
+
+        private void Redo()
+        {
+            if (redoStack.Count > 0)
+            {
+                undoStack.Push(new List<Shape>(shapes));
+                shapes = redoStack.Pop();
+                this.Invalidate();
+            }
+        }
+
+
         private void DrawingForm_Load(object sender, EventArgs e)
         {
 
@@ -312,10 +355,11 @@ namespace CourseProject
         {
             if (selectedShape != null)
             {
+                PushToUndoStack();
                 shapes.Remove(selectedShape);
-                selectedShape = null; 
+                selectedShape = null;
                 MessageBox.Show("Shape has been deleted.");
-                this.Invalidate(); 
+                this.Invalidate();
             }
             else
             {

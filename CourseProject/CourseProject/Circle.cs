@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CourseProject
 {
@@ -31,10 +27,17 @@ namespace CourseProject
                 g.DrawEllipse(pen, X - Radius, Y - Radius, diameter, diameter);
             }
         }
+
+        public override bool Contains(Point p)
+        {
+            int dx = p.X - X;
+            int dy = p.Y - Y;
+            return dx * dx + dy * dy <= Radius * Radius;
+        }
+
         public override string ToString()
         {
             return $"Circle: Radius = {Radius}";
         }
     }
-
 }
