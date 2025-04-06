@@ -33,6 +33,7 @@
             this.btnFillColor = new System.Windows.Forms.Button();
             this.btnBorderColor = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.comboBoxShapes = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnFillColor
@@ -65,11 +66,25 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // comboBoxShapes
+            // 
+            this.comboBoxShapes.FormattingEnabled = true;
+            this.comboBoxShapes.Items.AddRange(new object[] {
+            "Rectangle",
+            "Square",
+            "Circle",
+            "Triangle"});
+            this.comboBoxShapes.Location = new System.Drawing.Point(730, 242);
+            this.comboBoxShapes.Name = "comboBoxShapes";
+            this.comboBoxShapes.Size = new System.Drawing.Size(285, 28);
+            this.comboBoxShapes.TabIndex = 3;
+            // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 585);
+            this.Controls.Add(this.comboBoxShapes);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBorderColor);
             this.Controls.Add(this.btnFillColor);
@@ -87,5 +102,6 @@
         private System.Windows.Forms.Button btnFillColor;
         private System.Windows.Forms.Button btnBorderColor;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ComboBox comboBoxShapes;
     }
 }

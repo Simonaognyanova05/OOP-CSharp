@@ -19,10 +19,14 @@ namespace CourseProject
         private Point lastMousePosition;
         private const int HandleSize = 10;
 
+        private string currentFigureType = "Rectangle";
+        private bool drawingMode = false;
+        private Point drawStartPoint;
+
         public DrawingForm(List<Shape> shapes)
         {
             InitializeComponent();
-            this.shapes = shapes; 
+            this.shapes = shapes;
             this.Text = "Draw Shape";
             this.BackColor = Color.White;
             this.Size = new Size(500, 500);
@@ -31,6 +35,10 @@ namespace CourseProject
             this.MouseDown += DrawingForm_MouseDown;
             this.MouseMove += DrawingForm_MouseMove;
             this.MouseUp += DrawingForm_MouseUp;
+
+            this.KeyPreview = true;
+            this.KeyDown += (s, e) => { if (e.Shift) drawingMode = true; };
+            this.KeyUp += (s, e) => { drawingMode = false; };
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -73,6 +81,39 @@ namespace CourseProject
 
         private void DrawingForm_MouseDown(object sender, MouseEventArgs e)
         {
+            if (ModifierKeys == Keys.Shift)
+            {
+                // Рисуване на нова фигура според избора в ComboBox
+                string selectedType = comboBoxShapes.SelectedItem?.ToString();
+
+                Shape newShape = null;
+
+                switch (selectedType)
+                {
+                    case "Circle":
+                        newShape = new Circle(e.X, e.Y, 40);
+                        break;
+                    case "Rectangle":
+                        newShape = new Rectangle(e.X, e.Y, 80, 50);
+                        break;
+                    case "Square":
+                        newShape = new Square(e.X, e.Y, 50);
+                        break;
+                    case "Triangle":
+                        newShape = new Triangle(e.X, e.Y, 60, 50);
+                        break;
+                }
+
+                if (newShape != null)
+                {
+                    shapes.Add(newShape);
+                    selectedShape = newShape;
+                    Invalidate(); // Прерисуване
+                }
+
+                return; // Не продължаваме с избиране или преместване
+            }
+
             selectedShape = null;
 
             foreach (var shape in shapes)
@@ -95,6 +136,8 @@ namespace CourseProject
 
             lastMousePosition = e.Location;
         }
+
+
 
         private void DrawingForm_MouseMove(object sender, MouseEventArgs e)
         {
@@ -140,6 +183,44 @@ namespace CourseProject
 
         private void DrawingForm_MouseUp(object sender, MouseEventArgs e)
         {
+            if (drawingMode)
+            {
+                int x = Math.Min(drawStartPoint.X, e.X);
+                int y = Math.Min(drawStartPoint.Y, e.Y);
+                int width = Math.Abs(e.X - drawStartPoint.X);
+                int height = Math.Abs(e.Y - drawStartPoint.Y);
+
+                Shape newShape = null;
+
+                switch (currentFigureType)
+                {
+                    case "Rectangle":
+                        newShape = new Rectangle(width, height, x, y);
+                        break;
+                    case "Circle":
+                        int radius = (int)(Math.Sqrt(width * width + height * height) / 2);
+                        int centerX = x + width / 2;
+                        int centerY = y + height / 2;
+                        newShape = new Circle(centerX, centerY, radius);
+                        break;
+                    case "Square":
+                        int side = Math.Min(width, height);
+                        newShape = new Square(x, y, side);
+                        break;
+                    case "Triangle":
+                        newShape = new Triangle(width, height, x + width / 2, y + height);
+                        break;
+                }
+
+                if (newShape != null)
+                {
+                    shapes.Add(newShape);
+                    this.Invalidate();
+                }
+
+                return;
+            }
+
             isDragging = false;
             isResizing = false;
         }
