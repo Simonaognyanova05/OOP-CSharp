@@ -17,7 +17,6 @@ public abstract class Shape
     public abstract void Draw(Graphics g);
     public abstract bool Contains(Point p);
 
-    // ➕ ДОБАВИ ТОВА:
     public abstract Shape Clone();
 
     public override string ToString()

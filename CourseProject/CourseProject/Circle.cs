@@ -42,8 +42,6 @@ namespace CourseProject
                 BorderColor = this.BorderColor
             };
         }
-
-
         public override string ToString()
         {
             return $"Circle: Radius = {Radius}";
