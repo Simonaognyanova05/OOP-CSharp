@@ -38,7 +38,7 @@
             // 
             // btnFillColor
             // 
-            this.btnFillColor.Location = new System.Drawing.Point(717, 89);
+            this.btnFillColor.Location = new System.Drawing.Point(487, 12);
             this.btnFillColor.Name = "btnFillColor";
             this.btnFillColor.Size = new System.Drawing.Size(213, 53);
             this.btnFillColor.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             // btnBorderColor
             // 
-            this.btnBorderColor.Location = new System.Drawing.Point(717, 30);
+            this.btnBorderColor.Location = new System.Drawing.Point(268, 12);
             this.btnBorderColor.Name = "btnBorderColor";
             this.btnBorderColor.Size = new System.Drawing.Size(213, 53);
             this.btnBorderColor.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(717, 148);
+            this.btnDelete.Location = new System.Drawing.Point(706, 12);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(213, 53);
             this.btnDelete.TabIndex = 2;
@@ -74,7 +74,7 @@
             "Square",
             "Circle",
             "Triangle"});
-            this.comboBoxShapes.Location = new System.Drawing.Point(730, 242);
+            this.comboBoxShapes.Location = new System.Drawing.Point(268, 115);
             this.comboBoxShapes.Name = "comboBoxShapes";
             this.comboBoxShapes.Size = new System.Drawing.Size(285, 28);
             this.comboBoxShapes.TabIndex = 3;
