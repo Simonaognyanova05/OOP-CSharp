@@ -34,6 +34,7 @@
             this.btnBorderColor = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.comboBoxShapes = new System.Windows.Forms.ComboBox();
+            this.lstCommandHistory = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // btnFillColor
@@ -79,11 +80,21 @@
             this.comboBoxShapes.Size = new System.Drawing.Size(285, 28);
             this.comboBoxShapes.TabIndex = 3;
             // 
+            // lstCommandHistory
+            // 
+            this.lstCommandHistory.FormattingEnabled = true;
+            this.lstCommandHistory.ItemHeight = 20;
+            this.lstCommandHistory.Location = new System.Drawing.Point(600, 115);
+            this.lstCommandHistory.Name = "lstCommandHistory";
+            this.lstCommandHistory.Size = new System.Drawing.Size(226, 144);
+            this.lstCommandHistory.TabIndex = 4;
+            // 
             // DrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1173, 585);
+            this.Controls.Add(this.lstCommandHistory);
             this.Controls.Add(this.comboBoxShapes);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBorderColor);
@@ -103,5 +114,6 @@
         private System.Windows.Forms.Button btnBorderColor;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ComboBox comboBoxShapes;
+        private System.Windows.Forms.ListBox lstCommandHistory;
     }
 }

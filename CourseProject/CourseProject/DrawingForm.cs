@@ -279,7 +279,13 @@ namespace CourseProject
             {
                 redoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = undoStack.Pop();
+
+                lstCommandHistory.Items.Add("Undo executed");
                 this.Invalidate();
+            }
+            else
+            {
+                lstCommandHistory.Items.Add("No actions to undo");
             }
         }
 
@@ -289,9 +295,16 @@ namespace CourseProject
             {
                 undoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = redoStack.Pop();
+
+                lstCommandHistory.Items.Add("Redo executed");
                 this.Invalidate();
             }
+            else
+            {
+                lstCommandHistory.Items.Add("No actions to redo");
+            }
         }
+
 
         private void DrawingForm_Load(object sender, EventArgs e) { }
 
