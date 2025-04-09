@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CourseProject
@@ -157,27 +153,28 @@ namespace CourseProject
                 int deltaX = e.X - lastMousePosition.X;
                 int deltaY = e.Y - lastMousePosition.Y;
 
-                if (selectedShape is Circle circle)
+                // Промени за ограничаване на размерите
+                if (selectedShape is Rectangle rect)
                 {
-                    circle.Radius += deltaX;
-                }
-                else if (selectedShape is Rectangle rect)
-                {
-                    rect.Width += deltaX;
-                    rect.Height += deltaY;
+                    rect.Width = Math.Max(0, rect.Width + deltaX);
+                    rect.Height = Math.Max(0, rect.Height + deltaY);
                 }
                 else if (selectedShape is Square square)
                 {
-                    square.A += Math.Min(deltaX, deltaY);
+                    square.A = Math.Max(0, square.A + Math.Min(deltaX, deltaY));
+                }
+                else if (selectedShape is Circle circle)
+                {
+                    circle.Radius = Math.Max(0, circle.Radius + deltaX);
                 }
                 else if (selectedShape is Triangle triangle)
                 {
-                    triangle.BaseLength += deltaX;
-                    triangle.Height += deltaY;
+                    triangle.BaseLength = Math.Max(0, triangle.BaseLength + deltaX);
+                    triangle.Height = Math.Max(0, triangle.Height + deltaY);
                 }
 
                 lastMousePosition = e.Location;
-                this.Invalidate();
+                this.Invalidate();  // Преключва повторно рисуването на екрана
             }
             else if (isDragging && selectedShape != null)
             {
@@ -188,9 +185,11 @@ namespace CourseProject
                 selectedShape.Y += deltaY;
 
                 lastMousePosition = e.Location;
-                this.Invalidate();
+                this.Invalidate();  // Преключва повторно рисуването на екрана
             }
         }
+
+
 
         private void DrawingForm_MouseUp(object sender, MouseEventArgs e)
         {
@@ -292,7 +291,7 @@ namespace CourseProject
         private void Redo()
         {
             if (redoStack.Count > 0)
-            { 
+            {
                 undoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = redoStack.Pop();
 
