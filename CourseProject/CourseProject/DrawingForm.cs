@@ -292,7 +292,7 @@ namespace CourseProject
         private void Redo()
         {
             if (redoStack.Count > 0)
-            {
+            { 
                 undoStack.Push(shapes.Select(s => s.Clone()).ToList());
                 shapes = redoStack.Pop();
 
